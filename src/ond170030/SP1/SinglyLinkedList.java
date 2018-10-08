@@ -1,7 +1,8 @@
-package aua170030;
+package ond170030.SP1;
 import java.util.Iterator;
 import java.util.Scanner;
 import java.util.NoSuchElementException;
+
 //Team Members : Arpita Agrawal and omkar Dixit
 public class SinglyLinkedList<T> implements Iterable<T> {
 

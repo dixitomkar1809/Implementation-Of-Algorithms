@@ -1,10 +1,10 @@
-package aua170030;
+package ond170030.SP1;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
+import ond170030.SP1.*;
 
-import aua170030.SinglyLinkedList.Entry;
 //Team Members : Arpita Agrawal and Omkar Dixit
 
 public class DoublyLinkedList<T> extends SinglyLinkedList<T> {
