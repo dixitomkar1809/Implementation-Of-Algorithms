@@ -44,15 +44,47 @@ public class SkipList<T extends Comparable<? super T>> {
     private void find(T x){
         Entry<T> cursor = this.head;
         for(int i = this.maxLevel - 1; i >= 0; i--){
-            while(((T)cursor.next[i].element).compareTo((x)) > 0){
+            boolean b = ((T) cursor.next[i].element).compareTo((x)) < 0;
+            while (b) {
                 cursor = cursor.next[i];
             }
             this.last[i] = cursor;
         }
     }
 
+    private int chooseLevel(){
+        // Slow Method
+        int lev = 1;
+        while(this.random.nextBoolean()){
+            if(lev >= 33){
+                break;
+            }else{
+                lev+=1;
+            }
+        }
+        if(lev > this.maxLevel){
+            maxLevel = lev;
+        }
+        return lev;
+    }
+
     // Add x to list. If x already exists, reject it. Returns true if new node is added to list
-    public boolean add(T x) { return true; }
+    public boolean add(T x) { 
+        if(contains(x)){
+            return false;
+        }else{
+            int lev = this.chooseLevel();
+            Entry<T> newNode = new Entry<T>(x, lev);
+            for(int i = 0; i <= lev -1; i++){
+                newNode.next[i] =last[i].next[i];
+                last[i].next[i] = newNode;
+            }
+            newNode.next[0].prev = newNode;
+            newNode.prev = last[0];
+            this.size+=1;
+            return true;
+        }
+    }
 
     // Find smallest element that is greater or equal to x
     public T ceiling(T x) {
@@ -81,6 +113,11 @@ public class SkipList<T extends Comparable<? super T>> {
 
     // Find largest element that is less than or equal to x
     public T floor(T x) {
+        // if(!this.isEmpty()){
+        //     return null;
+        // }else{
+        //     Entry<T> cursor = this.contains(x);
+        // }
         return null;
     }
 
@@ -134,7 +171,17 @@ public class SkipList<T extends Comparable<? super T>> {
 
     // Return last element of list
     public T last() {
-        return null;
+        if(this.isEmpty()){
+            return null;
+        }else{
+            Entry<T> cursor = this.head;
+            for(int level = this.head.level; level >= 0; level--){
+                while(cursor.next[level] != null && cursor.next[level].next[0] != null){
+                    cursor = cursor.next[level];
+                }
+            }
+            return (T) cursor.next[0].element;
+        }
     }
 
     // Optional operation: Reorganize the elements of the list into a perfect skip list
@@ -143,7 +190,7 @@ public class SkipList<T extends Comparable<? super T>> {
 
     // Remove x from list.  Removed element is returned. Return null if x not in list
     public T remove(T x) {
-        if(!contains(x)){
+        if(!this.contains(x)){
             return null;
         }
         Entry ent = last[0].next[0];
@@ -157,5 +204,10 @@ public class SkipList<T extends Comparable<? super T>> {
     // Return the number of elements in the list
     public int size() {
         return this.size;
+    }
+
+    public static void main(String[] args) {
+        SkipList sl = new SkipList<>();
+        System.out.println(sl.add(1));
     }
 }

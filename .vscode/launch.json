@@ -1,0 +1,37 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - LectureTreeMapEg",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "misc.LectureTreeMapEg",
+            "args": "",
+            "projectName": "ImplementationAssignments"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SkipList",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "ond170030.LP2.SkipList",
+            "args": "",
+            "projectName": "ImplementationAssignments"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestLP1",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "ond170030.LP1.TestLP1",
+            "args": "",
+            "projectName": "ImplementationAssignments"
+        }
+    ]
+}

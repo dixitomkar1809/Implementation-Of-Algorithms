@@ -13,7 +13,7 @@
 package ond170030.LP1;
 public class TestLP1 {
     public static void main(String[] args) throws Exception {
-        int val = 5;
+        int val = 1;
         if(args.length > 0) { val = Integer.parseInt(args[0]); }
 
         Timer timer = new Timer();
