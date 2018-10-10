@@ -84,16 +84,14 @@ public class SkipList<T extends Comparable<? super T>> {
     // Find smallest element that is greater or equal to x
     public T ceiling(T x) {
         if(this.isEmpty()){
+            System.out.println("Skiplist is empty");
             return null;
         }else{
+            Entry<T> cursor = this.last[0];
             if(this.contains(x)){
-                Entry<T> cursor = this.last[0];
-                if(cursor.getElement().equals(x)){
-                    return cursor.getElement();
-                }
-                return (T) cursor.next[0].getElement();
+                return cursor.getElement();
             }else{
-                return null;
+                return (T) cursor.next[0].getElement();
             }
         }
     }
@@ -244,15 +242,11 @@ public class SkipList<T extends Comparable<? super T>> {
 
     public static void main(String[] args) {
         SkipList sl = new SkipList<>();
-        int x = 20;
+        int x = sl.random.nextInt();
         System.out.println("SkipList size -> " + sl.size());
         System.out.println("SkipList isEmpty -> " + sl.isEmpty());
         for(int i=1; i<=10; i++){
-            if(sl.random.nextBoolean()){
-                sl.add(i+sl.random.nextInt());
-            }else{
-                sl.add(i);
-            }
+            sl.add(sl.random.nextInt());
         }
         System.out.println("Max Level of this SkipList -> "+sl.maxLevel);
         System.out.println("SkipList size -> " + sl.size());
