@@ -116,6 +116,7 @@ public class SkipList<T extends Comparable<? super T>> {
     // Return first element of list
     public T first() {
         if(isEmpty()){
+            System.out.println("SkipList is empty");
             return null;
         }
         else{
@@ -129,12 +130,17 @@ public class SkipList<T extends Comparable<? super T>> {
 
     // Find largest element that is less than or equal to x
     public T floor(T x) {
-        // if(!this.isEmpty()){
-        //     return null;
-        // }else{
-        //     Entry<T> cursor = this.contains(x);
-        // }
-        return null;
+        if(this.isEmpty()){
+            System.out.println("Skiplist is empty");
+            return null;
+        }else{
+            Entry<T> cursor = this.last[0];
+            if(this.contains(x)){
+                return cursor.getElement();
+            }else{
+                return (T) this.last[1].getElement();
+            }
+        }
     }
 
     // Return element at index n of list.  First element is at index 0.
@@ -206,6 +212,7 @@ public class SkipList<T extends Comparable<? super T>> {
     // Remove x from list.  Removed element is returned. Return null if x not in list
     public T remove(T x) {
         if(!this.contains(x)){
+            System.out.println("SkipList doesn't containt the element -> " + x);
             return null;
         }
         Entry ent = last[0].next[0];
@@ -242,20 +249,25 @@ public class SkipList<T extends Comparable<? super T>> {
 
     public static void main(String[] args) {
         SkipList sl = new SkipList<>();
-        int x = sl.random.nextInt();
+        // int x = sl.random.nextInt();
+        int x = 5;
         System.out.println("SkipList size -> " + sl.size());
         System.out.println("SkipList isEmpty -> " + sl.isEmpty());
         for(int i=1; i<=10; i++){
-            sl.add(sl.random.nextInt());
+            // sl.add(sl.random.nextInt());
+            sl.add(i);
         }
         System.out.println("Max Level of this SkipList -> "+sl.maxLevel);
         System.out.println("SkipList size -> " + sl.size());
         System.out.println("SkipList isEmpty -> " + sl.isEmpty());
         sl.printList();
-        System.out.println("SkipList contains "+ x +" -> " + sl.contains(x));
+        System.out.println("SkipList contains " + x + " -> " + sl.contains(x));
         sl.printLastArray();
         System.out.println("SkipList First Element -> "+ sl.first());
         System.out.println("SkipList Last Element -> "+ sl.last());
-        System.out.println("SkipList Ceiling Function for "+ x + " -> " +sl.ceiling(x));
+        System.out.println("SkipList Ceiling Function for " + x + " -> " +sl.ceiling(x));
+        System.out.println("SkipList Floor Function for " + x + " -> " +sl.floor(x));
+        System.out.println("SkipList Remove Function for " + x + " -> " +sl.remove(x));
+        sl.printList();
     }
 }
