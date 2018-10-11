@@ -136,7 +136,7 @@ public class SkipList<T extends Comparable<? super T>> {
         }else{
             Entry<T> cursor = this.last[0];
             if(this.contains(x)){
-                return cursor.getElement();
+                return (T) cursor.next[0].getElement();
             }else{
                 return (T) this.last[1].getElement();
             }
@@ -144,13 +144,26 @@ public class SkipList<T extends Comparable<? super T>> {
     }
 
     // Return element at index n of list.  First element is at index 0.
-    public T get(int n) {
-        return null;
+    public T get(int n){
+        if(n < 0 || n > size - 1){
+            System.out.println("No Such Element");
+            return null;
+        }
+        return this.getLinear(n);
     }
 
     // O(n) algorithm for get(n)
     public T getLinear(int n) {
-        return null;
+        if(isEmpty()){
+            System.out.println("SkipList is empty");
+            return null;
+        }else{
+            Entry<T> cursor =this.head.next[0];
+            for(int i=1; i<n; i++){
+                cursor = cursor.next[0];
+            }
+            return cursor.getElement();
+        }
     }
 
     // Optional operation: Eligible for EC.
@@ -251,6 +264,7 @@ public class SkipList<T extends Comparable<? super T>> {
         SkipList sl = new SkipList<>();
         // int x = sl.random.nextInt();
         int x = 5;
+        int y =-1;
         System.out.println("SkipList size -> " + sl.size());
         System.out.println("SkipList isEmpty -> " + sl.isEmpty());
         for(int i=1; i<=10; i++){
@@ -265,9 +279,10 @@ public class SkipList<T extends Comparable<? super T>> {
         sl.printLastArray();
         System.out.println("SkipList First Element -> "+ sl.first());
         System.out.println("SkipList Last Element -> "+ sl.last());
-        System.out.println("SkipList Ceiling Function for " + x + " -> " +sl.ceiling(x));
-        System.out.println("SkipList Floor Function for " + x + " -> " +sl.floor(x));
-        System.out.println("SkipList Remove Function for " + x + " -> " +sl.remove(x));
+        System.out.println("SkipList Ceiling Function for " + x + " -> " + sl.ceiling(x));
+        System.out.println("SkipList Floor Function for " + x + " -> " + sl.floor(x));
+        System.out.println("SkipList Remove Function for " + x + " -> " + sl.remove(x));
         sl.printList();
+        System.out.println("SkipList getLinear Function for " + y + " -> " + sl.get(y));
     }
 }
