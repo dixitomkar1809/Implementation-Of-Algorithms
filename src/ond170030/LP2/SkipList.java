@@ -65,18 +65,22 @@ public class SkipList<T extends Comparable<? super T>> {
     // Add x to list. If x already exists, reject it. Returns true if new node is added to list
     public boolean add(T x) { 
         if(contains(x)){
+            // System.out.println("Add: " +x+", "+false);
+            // this.printList();
             return false;
         }else{
             int lev = this.chooseLevel();
             Entry<T> newNode = new Entry<T>(x, lev);
             for(int i = 0; i <= lev-1; i++){
                 // System.out.println(i);
-                newNode.next[i] =last[i].next[i];
-                last[i].next[i] = newNode;
+                newNode.next[i] = this.last[i].next[i];
+                this.last[i].next[i] = newNode;
             }
             newNode.next[0].prev = newNode;
             newNode.prev = this.last[0];
             this.size+=1;
+            // System.out.println("Add: "+x+", "+true);
+            // this.printList();
             return true;
         }
     }
@@ -84,14 +88,17 @@ public class SkipList<T extends Comparable<? super T>> {
     // Find smallest element that is greater or equal to x
     public T ceiling(T x) {
         if(this.isEmpty()){
-            System.out.println("Skiplist is empty");
+            // System.out.println("Skiplist is empty");
             return null;
         }else{
+            this.find(x);
             Entry<T> cursor = this.last[0];
             if(this.contains(x)){
-                return cursor.getElement();
-            }else{
+                // System.out.println("Ceiling: "+cursor.getElement());
                 return (T) cursor.next[0].getElement();
+            }else{
+                // System.out.println("Ceiling: "+cursor.next[0].getElement());
+                return cursor.getElement();
             }
         }
     }
@@ -110,34 +117,48 @@ public class SkipList<T extends Comparable<? super T>> {
     // Does list contain x?
     public boolean contains(T x) {
         this.find(x);
-        return this.last[0].next[0].getElement() == x;
+        if(this.last[0].next[0].getElement()==null){
+            // System.out.println("Contain : 0");
+            return false;
+        }else{
+            // System.out.println("Contain "+ (this.last[0].next[0].getElement().equals(x)));
+            return this.last[0].next[0].getElement().equals(x);
+        }
     }
 
     // Return first element of list
     public T first() {
         if(isEmpty()){
-            System.out.println("SkipList is empty");
+            // System.out.println("first(): SkipList is empty");
             return null;
         }
         else{
             Entry<T> cursor = this.head;
             if(cursor.next[0] != this.tail){
+                // System.out.println("First: "+cursor.next[0].getElement());
                 return (T) cursor.next[0].getElement();
             }
         }
-        return (T) this.head.next[0].getElement();
+        return null;
     }
 
     // Find largest element that is less than or equal to x
     public T floor(T x) {
+        // System.out.println("Floor of "+x);
+        this.find(x);
+        // this.printLastArray();
+        // this.printList();
         if(this.isEmpty()){
-            System.out.println("Skiplist is empty");
+            // System.out.println("floor(): Skiplist is empty");
             return null;
         }else{
             Entry<T> cursor = this.last[0];
             if(this.contains(x)){
+                // System.out.println("Floor: "+cursor.next[0].getElement());
+
                 return (T) cursor.next[0].getElement();
             }else{
+                // System.out.println("Floor: "+this.last[1].getElement());
                 return (T) this.last[1].getElement();
             }
         }
@@ -146,20 +167,21 @@ public class SkipList<T extends Comparable<? super T>> {
     // Return element at index n of list.  First element is at index 0.
     public T get(int n){
         if(n < 0 || n > size - 1){
-            System.out.println("No Such Element");
+            System.out.println("get(): No Such Element");
             return null;
         }
+        // System.out.println("Get: "+this.getLinear(n));
         return this.getLinear(n);
     }
 
     // O(n) algorithm for get(n)
     public T getLinear(int n) {
         if(isEmpty()){
-            System.out.println("SkipList is empty");
+            System.out.println("getLinear(): SkipList is empty");
             return null;
         }else{
             Entry<T> cursor =this.head.next[0];
-            for(int i=1; i<n; i++){
+            for(int i=1; i<=n; i++){
                 cursor = cursor.next[0];
             }
             return cursor.getElement();
@@ -207,6 +229,7 @@ public class SkipList<T extends Comparable<? super T>> {
     // Return last element of list
     public T last() {
         if(this.isEmpty()){
+            // System.out.println("last(): SkipList is Empty");
             return null;
         }else{
             Entry<T> cursor = this.head.next[0];
@@ -214,6 +237,7 @@ public class SkipList<T extends Comparable<? super T>> {
                 // System.out.println(cursor.getElement());
                 cursor = cursor.next[0];
             }
+            // System.out.println("Last: "+cursor.getElement());
             return (T) cursor.getElement();
         }
     }
@@ -224,8 +248,10 @@ public class SkipList<T extends Comparable<? super T>> {
 
     // Remove x from list.  Removed element is returned. Return null if x not in list
     public T remove(T x) {
+        // System.out.println("Removing "+x);
+        // this.printList();
         if(!this.contains(x)){
-            System.out.println("SkipList doesn't containt the element -> " + x);
+            // System.out.println("remove(): SkipList doesn't containt the element -> " + x);
             return null;
         }
         Entry ent = last[0].next[0];
@@ -233,6 +259,7 @@ public class SkipList<T extends Comparable<? super T>> {
             last[i].next[i] = ent.next[i];
         }
         this.size-=1;
+        // System.out.println("Remove: "+ent.getElement());
         return (T) ent.getElement();
     }
 
@@ -242,6 +269,7 @@ public class SkipList<T extends Comparable<? super T>> {
     }
 
     private void printList(){
+        System.out.println("SkipList");
         for(int i=this.maxLevel-1; i>=0; i--){
             Entry<T> cursor = this.head.next[i];
             System.out.println("Level: "+i);
@@ -254,9 +282,11 @@ public class SkipList<T extends Comparable<? super T>> {
     }
 
     private void printLastArray(){
+        System.out.println("Last Array");
         for(int i =0; i<= this.maxLevel-1; i++){
             System.out.println(this.last[i].getElement());
         }
+        // System.out.println("last[0] element "+this.last[0].getElement());
         return;
     }
 
