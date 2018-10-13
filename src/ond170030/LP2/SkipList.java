@@ -53,7 +53,6 @@ public class SkipList<T extends Comparable<? super T>> {
                 break;
             }else{
                 lev+=1;
-
             }
         }
         if(lev > this.maxLevel){
@@ -135,14 +134,10 @@ public class SkipList<T extends Comparable<? super T>> {
             return null;
         }else{
             if(this.contains(x)){
-                // if(this.contains(x)){
-                    return (T) this.last[0].next[0].getElement();
-                // }
-                
+                return (T) this.last[0].next[0].getElement();
             }else{
                 return this.last[0].getElement();
             }
-            // return null;
         }
     }
 
