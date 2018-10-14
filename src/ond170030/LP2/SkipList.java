@@ -1,5 +1,6 @@
 // Change this to netid of any member of team
 package ond170030.LP2;
+import java.security.KeyStore.Entry;
 import java.util.*;
 /* Starter code for LP2 */
 // Skeleton for skip list implementation.
@@ -41,6 +42,8 @@ public class SkipList<T extends Comparable<? super T>> {
         this.random = new Random();
         for(int i =0; i<= PossibleLevels-1; i++){
             this.head.next[i] = this.tail;
+            this.head.span[i] = 0;
+            this.tail.span[i] = 0;
             this.last[i] = this.head;
         }
     }
@@ -67,16 +70,34 @@ public class SkipList<T extends Comparable<? super T>> {
             return false;
         }else{
             int lev = this.chooseLevel();
+            // int spanCount = 0;
             Entry<T> newNode = new Entry<T>(x, lev);
+            newNode.span[0] = 1;
             for(int i = 0; i <= lev-1; i++){
                 newNode.next[i] = this.last[i].next[i];
                 this.last[i].next[i] = newNode;
             }
+            // System.out.println("Size of Span array of "+x+" during addition ->"+ newNode.span.length);
+            // for(int i = lev-1; i >=0 ; i-- ){
+            //     System.out.print(newNode.span[i]+" ");
+            // }
+            // System.out.println();
             newNode.next[0].prev = newNode;
             newNode.prev = this.last[0];
             this.size+=1;
             return true;
         }
+    }
+
+    private int fDistance(Entry<T> n1, Entry<T> n2){
+        Entry<T> cursor = n1;
+        int cnt = 0;
+        while(cursor != n2){
+            cnt+=1;
+            cursor = cursor.next[0];
+        }
+        System.out.println("fDistance of "+n1.getElement()+" and "+n2.getElement()+" is "+ cnt);
+        return cnt;
     }
 
     // Find smallest element that is greater or equal to x
@@ -167,7 +188,21 @@ public class SkipList<T extends Comparable<? super T>> {
     // Optional operation: Eligible for EC.
     // O(log n) expected time for get(n). Requires maintenance of spans, as discussed in class.
     public T getLog(int n) {
-        return null;
+        if(this.isEmpty()){
+            return null;
+        }
+        else{
+            Entry<T> cursor = this.head;
+            int position = 0;
+            for(int i= this.maxLevel; i>=1 ; i--){
+                while(position + cursor.span[i] <= n ){
+                    position+=cursor.span[i];
+                    cursor = cursor.next[i];
+                }
+            }
+            return cursor.getElement();
+
+        }
     }
 
     // Is the list empty?
@@ -240,14 +275,30 @@ public class SkipList<T extends Comparable<? super T>> {
     private void printList(){
         System.out.println("SkipList");
         for(int i=this.maxLevel-1; i>=0; i--){
-            Entry<T> cursor = this.head.next[i];
+            Entry<T> cursor = this.head;
             System.out.println("Level: "+i);
             while(cursor != this.tail){
                 System.out.print(cursor.getElement() + " ");
+                if(cursor.next[i] != this.tail){
+                    cursor.span[i] = fDistance(cursor, cursor.next[i]);
+                }
                 cursor = cursor.next[i];
             }
             System.out.println();
         }
+    }
+
+    private void printSpanList(){
+        Entry<T> cursor = this.head;
+        while(cursor != this.tail){
+            System.out.println("Size of Span array of "+cursor.getElement()+" ->"+ cursor.span.length);
+            for(int i = cursor.span.length-1; i >=0 ; i-- ){
+                System.out.print(cursor.span[i]+" ");
+            }
+            System.out.println();
+            cursor = cursor.next[0];
+        }
+            
     }
 
     private void printLastArray(){
@@ -259,28 +310,12 @@ public class SkipList<T extends Comparable<? super T>> {
     }
 
     public static void main(String[] args) {
-        SkipList sl = new SkipList<>();
-        // int x = sl.random.nextInt();
-        int x = 5;
-        int y =-1;
-        System.out.println("SkipList size -> " + sl.size());
-        System.out.println("SkipList isEmpty -> " + sl.isEmpty());
-        for(int i=1; i<=10; i++){
-            // sl.add(sl.random.nextInt());
+        SkipList<Integer> sl = new SkipList<>();
+        for(int i=1; i<=5; i++){
             sl.add(i);
         }
         System.out.println("Max Level of this SkipList -> "+sl.maxLevel);
-        System.out.println("SkipList size -> " + sl.size());
-        System.out.println("SkipList isEmpty -> " + sl.isEmpty());
         sl.printList();
-        System.out.println("SkipList contains " + x + " -> " + sl.contains(x));
-        sl.printLastArray();
-        System.out.println("SkipList First Element -> "+ sl.first());
-        System.out.println("SkipList Last Element -> "+ sl.last());
-        System.out.println("SkipList Ceiling Function for " + x + " -> " + sl.ceiling(x));
-        System.out.println("SkipList Floor Function for " + x + " -> " + sl.floor(x));
-        System.out.println("SkipList Remove Function for " + x + " -> " + sl.remove(x));
-        sl.printList();
-        System.out.println("SkipList getLinear Function for " + y + " -> " + sl.get(y));
+        sl.printSpanList();
     }
 }
