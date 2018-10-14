@@ -31,17 +31,17 @@ public class SkipListDriver {
                 case "Add": {
                     operand = sc.nextLong();
                     if(skipList.add(operand)) {
-                        System.out.println((cnt++) +" Add : 1");
+                        // System.out.println((cnt++) +" Add : 1");
                         result = (result + 1) % modValue;
                     }else{
-                        System.out.println((cnt++) +" Add : 0");
+                        // System.out.println((cnt++) +" Add : 0");
                     }
                     break;
                 }
                 case "Ceiling": {
                     operand = sc.nextLong();
                     returnValue = skipList.ceiling(operand);
-                    System.out.println((cnt++) +" Ceiling : "+returnValue);
+                    // System.out.println((cnt++) +" Ceiling : "+returnValue);
                     if (returnValue != null) {
                         result = (result + returnValue) % modValue;
                     }
@@ -49,7 +49,7 @@ public class SkipListDriver {
                 }
                 case "First": {
                     returnValue = skipList.first();
-                    System.out.println((cnt++) +" First : "+returnValue);
+                    // System.out.println((cnt++) +" First : "+returnValue);
                     if (returnValue != null) {
                         result = (result + returnValue) % modValue;
                     }
@@ -58,7 +58,7 @@ public class SkipListDriver {
                 case "Get": {
                     int intOperand = sc.nextInt();
                     returnValue = skipList.get(intOperand);
-                    System.out.println((cnt++) +" Get : "+returnValue);
+                    // System.out.println((cnt++) +" Get : "+returnValue);
                     if (returnValue != null) {
                         result = (result + returnValue) % modValue;
                     }
@@ -66,7 +66,7 @@ public class SkipListDriver {
                 }
                 case "Last": {
                     returnValue = skipList.last();
-                    System.out.println((cnt++) +" Last : "+returnValue);
+                    // System.out.println((cnt++) +" Last : "+returnValue);
                     if (returnValue != null) {
                         result = (result + returnValue) % modValue;
                     }
@@ -75,7 +75,7 @@ public class SkipListDriver {
                 case "Floor": {
                     operand = sc.nextLong();
                     returnValue = skipList.floor(operand);
-                    System.out.println((cnt++) +" Floor : "+returnValue);
+                    // System.out.println((cnt++) +" Floor : "+returnValue);
                     if (returnValue != null) {
                         result = (result + returnValue) % modValue;
                     }
@@ -84,20 +84,20 @@ public class SkipListDriver {
                 case "Remove": {
                     operand = sc.nextLong();
                     if (skipList.remove(operand) != null) {
-                        System.out.println((cnt++) +" Remove : 1");
+                        // System.out.println((cnt++) +" Remove : 1");
                         result = (result + 1) % modValue;
                     }else{
-                        System.out.println((cnt++) +" Remove : 0");
+                        // System.out.println((cnt++) +" Remove : 0");
                     }
                     break;
                 }
                 case "Contains":{
                     operand = sc.nextLong();
                     if (skipList.contains(operand)) {
-                        System.out.println((cnt++) +" Contains : 1");
+                        // System.out.println((cnt++) +" Contains : 1");
                         result = (result + 1) % modValue;
                     }else{
-                        System.out.println((cnt++) +" Contains : 0");
+                        // System.out.println((cnt++) +" Contains : 0");
                     }
                     break;
                 }

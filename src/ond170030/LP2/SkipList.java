@@ -5,12 +5,21 @@ import java.util.*;
 /* Starter code for LP2 */
 // Skeleton for skip list implementation.
 
-public class SkipList<T extends Comparable<? super T>> {
-    static final int PossibleLevels = 33;
-    Entry<T> head, tail;
-    private int size, maxLevel;
-    Entry<T>[] last;
-    Random random;
+    public class SkipList<T extends Comparable<? super T>> {
+        static final int PossibleLevels = 33;
+        Entry<T> head, tail;
+        private int size, maxLevel;
+        Entry<T>[] last;
+        Random random;
+
+    static class rebuildElement<E>{
+        E element;
+
+        public rebuildElement(E element){
+            this.element = element;
+        }
+    }
+
 
     static class Entry<E> {
         E element;
@@ -178,9 +187,8 @@ public class SkipList<T extends Comparable<? super T>> {
 
     // Return element at index n of list.  First element is at index 0.
     public T get(int n){
-        if(n < 0 || n > size - 1){
-            System.out.println("get(): No Such Element");
-            return null;
+        if(n < 0 || n > this.size() - 1){
+            throw new NoSuchElementException();
         }
         return this.getLog(n);
     }
@@ -188,8 +196,7 @@ public class SkipList<T extends Comparable<? super T>> {
     // O(n) algorithm for get(n)
     public T getLinear(int n) {
         if(isEmpty()){
-            System.out.println("getLinear(): SkipList is empty");
-            return null;
+            throw new NoSuchElementException();
         }else{
             Entry<T> cursor =this.head.next[0];
             for(int i=1; i<=n; i++){
@@ -203,27 +210,18 @@ public class SkipList<T extends Comparable<? super T>> {
     // O(log n) expected time for get(n). Requires maintenance of spans, as discussed in class.
     public T getLog(int n) {
         if(this.isEmpty()){
-            System.out.println("empty list");
-            return null;
+            throw new NoSuchElementException();
         }
         else{
             Entry<T> cursor = this.head;
-            int position = 0;
-            System.out.println("getLog()");
+            int position = -1;
             for(int i= this.maxLevel-1; i>=0 ; i--){
-                while((position + cursor.span[i]) <= n ){
-                    System.out.println("Level-> "+ i);
-                    System.out.println("Cursor is-> "+cursor.getElement());
-                    System.out.println("Position-> "+position);
+                while((position + cursor.span[i]) <= n && cursor.next[i] != this.tail ){
                     position+=cursor.span[i];
-                    // if(cursor.next[i] != tail){
-                    //     cursor = cursor.next[i];
-                    // }
                     cursor = cursor.next[i];
                 }
             }
             return cursor.getElement();
-
         }
     }
 
@@ -238,10 +236,10 @@ public class SkipList<T extends Comparable<? super T>> {
 
     // Iterate through the elements of list in sorted order
     public Iterator<T> iterator() {
-        return (Iterator<T>) new SkipListIterator();
+        return new SkipListIterator();
     }
 
-    protected class SkipListIterator implements SLIterator<T>{
+    protected class SkipListIterator implements Iterator<T>{
         Entry<T> cursor, prev;
         // ready flag is used to make sure the element is ready to be remvoved
         boolean ready;
@@ -297,11 +295,70 @@ public class SkipList<T extends Comparable<? super T>> {
 
     // Optional operation: Reorganize the elements of the list into a perfect skip list
     // Not a standard operation in skip lists. Eligible for EC.
-    public void rebuild() { 
-        // T[] elementArray;
-        // for(int i=0; i<=this.size()-1; i++){
-        //     elementArray[i] = this.re
-        // }
+    public void rebuild() {
+        rebuildElement[] elements = new rebuildElement[size()];
+        int[] perfectLevels = new int[this.size()];
+        int index = 0;
+        int n = this.size();
+        int count = n;
+        for(int i = 0; i<n; i++){
+            T slElement = this.remove(getLog(0));
+            elements[i] = new rebuildElement(slElement);
+        }
+        this.maxLevel = (int)(Math.ceil(Math.log10(n)/Math.log10(2)));
+        
+        // At this point we have all the elements of the skiplist in an array(elements) and the original one is empty, so now we have to set everything to default
+        for(int i = 0; i< this.maxLevel; i++) {
+            this.head.next[i] = this.tail;
+            this.last[i] = this.head;
+            this.head.span[i] = 0;
+        }
+        calculatePerfectLevels(0, n-1, perfectLevels);
+        for(int i = 0; i < n; i++){
+            this.add((T) elements[i].element, perfectLevels[i]);
+        }
+        for(int i=0; i<perfectLevels.length;i++){
+            System.out.print(perfectLevels[i]+" ");
+        }
+        System.out.println();
+        for(int i=0; i<elements.length;i++){
+            System.out.print(elements[i].element+" ");
+        }
+        System.out.println();
+
+    }
+    //  Add method to be used in the rebuild function, 
+    private void add(T element, int i) {
+            Entry<T> newNode = new Entry<T>(element, i);
+            // newNode.span[0] = 1;
+            for(int j = 0; j <= i-1; j++){
+                newNode.next[j] = this.last[j].next[j];
+                this.last[j].next[j] = newNode;
+            }
+            newNode.next[0].prev = newNode;
+            newNode.prev = this.last[0];
+            this.spanFiller();
+            this.size+=1;
+            System.out.println(newNode.next[0].getElement());
+    }
+
+    // calculate levels that should be there in a perfect skiplist and then assign each node to their perfect level. 
+    // we use the divide and conquer method to set levels 
+    // calculatePerfectLevels for first to last which then divides into two first to mid and mid+1 to end
+    private void calculatePerfectLevels(int first, int last, int[] perfectLevels){
+        if(last<first){
+            return;
+        }
+        else if(first==last){
+            perfectLevels[first] = 1;
+            return;
+        }else{
+            int mid = (last-first+1)/2;
+            int temp = last - first + 1;
+            perfectLevels[first+mid] = (int) Math.ceil(Math.log10(temp) / Math.log10(2));
+            calculatePerfectLevels(first, first+mid-1, perfectLevels);
+            calculatePerfectLevels(first+mid+1, last, perfectLevels);
+        }
     }
 
     // Remove x from list.  Removed element is returned. Return null if x not in list
@@ -309,7 +366,7 @@ public class SkipList<T extends Comparable<? super T>> {
         if(!this.contains(x)){
             return null;
         }
-        Entry ent = last[0].next[0];
+        Entry<T> ent = this.last[0].next[0];
         for(int i = 0; i <= ent.next.length-1; i++){
             last[i].next[i] = ent.next[i];
         }
@@ -352,7 +409,6 @@ public class SkipList<T extends Comparable<? super T>> {
 
     // Used this function to just check if the last array is filled with proper nodes after the find(T x) method 
     private void printLastArray(){
-        System.out.println("Last Array");
         for(int i =0; i<= this.maxLevel-1; i++){
             System.out.println(this.last[i].getElement());
         }
@@ -362,13 +418,16 @@ public class SkipList<T extends Comparable<? super T>> {
     public static void main(String[] args) {
         SkipList<Integer> sl = new SkipList<>();
         Random random = new Random();
-        for(int i=10; i>=1; i--){
-            sl.add(random.nextInt(60));
+        for(int i=7; i>=1; i--){
+            sl.add(random.nextInt(100));
         }
         System.out.println("Max Level -> "+sl.maxLevel);
         System.out.println("Size -> "+sl.size());
         sl.printList();
-        // sl.printSpanList();
-        System.out.println(sl.get(9));
+        sl.rebuild();
+        System.out.println("Max Level -> "+sl.maxLevel);
+        System.out.println("Size -> "+sl.size());
+        sl.printList();
+        sl.printSpanList();
     }
 }
