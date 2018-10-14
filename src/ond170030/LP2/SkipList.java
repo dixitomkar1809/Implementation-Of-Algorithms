@@ -48,6 +48,7 @@ public class SkipList<T extends Comparable<? super T>> {
         }
     }
 
+    // returns the level for the new skiplist node 
     private int chooseLevel(){
         // Slow Method
         int lev = 1;
@@ -84,23 +85,26 @@ public class SkipList<T extends Comparable<? super T>> {
             return true;
         }
     }
-
+    // Fills the span array, the span of the last node will be zero as it would be pointing to the tail of the Skiplist, 
+    // the span of a node at a certain height which points to the tail will be just the count of nodes it would jump you not including the tail
     private void spanFiller(){
-        // System.out.println("Filling Spans");
         for(int i=this.maxLevel-1; i>=0; i-- ){
-            // System.out.println("Level: "+i);
             Entry<T> cursor = this.head;
-            while(cursor.next[i] != this.tail){
-                // System.out.println("Next of "+ cursor.getElement()+" is "+cursor.next[i].getElement());
+            while(cursor != this.tail){
                 this.spanFinder(cursor, cursor.next[i], i);
                 cursor = cursor.next[i];
             }
         }
     }
 
+    // SpanFinder finds the number of nodes you can jump
+    // here we use count to store the number of nodes we jump, which is initialized to zero incase of all elements except tail, where as tail is initialized to -1;
     private void spanFinder(Entry<T> n1, Entry<T> n2, int level){
         Entry<T> cursor = n1;
         int count = 0;
+        if(n2.equals(this.tail)){
+            count-=1;
+        }
         while(cursor != n2){
             count+=1;
             n1.span[level] = count;
@@ -124,6 +128,7 @@ public class SkipList<T extends Comparable<? super T>> {
         }
     }
 
+    // fills the last array of the node with all the nodes which are visited to find T x
     private void find(T x){
         Entry<T> cursor = this.head;
         for(int i = this.maxLevel - 1; i >= 0; i--){
@@ -177,7 +182,7 @@ public class SkipList<T extends Comparable<? super T>> {
             System.out.println("get(): No Such Element");
             return null;
         }
-        return this.getLinear(n);
+        return this.getLog(n);
     }
 
     // O(n) algorithm for get(n)
@@ -198,15 +203,22 @@ public class SkipList<T extends Comparable<? super T>> {
     // O(log n) expected time for get(n). Requires maintenance of spans, as discussed in class.
     public T getLog(int n) {
         if(this.isEmpty()){
+            System.out.println("empty list");
             return null;
         }
         else{
             Entry<T> cursor = this.head;
             int position = 0;
-            for(int i= this.maxLevel-1; i>=1 ; i--){
-                System.out.println("Level-> "+ i);
+            System.out.println("getLog()");
+            for(int i= this.maxLevel-1; i>=0 ; i--){
                 while((position + cursor.span[i]) <= n ){
+                    System.out.println("Level-> "+ i);
+                    System.out.println("Cursor is-> "+cursor.getElement());
+                    System.out.println("Position-> "+position);
                     position+=cursor.span[i];
+                    // if(cursor.next[i] != tail){
+                    //     cursor = cursor.next[i];
+                    // }
                     cursor = cursor.next[i];
                 }
             }
@@ -230,10 +242,14 @@ public class SkipList<T extends Comparable<? super T>> {
     }
 
     protected class SkipListIterator implements SLIterator<T>{
-        Entry<T> cursor;
+        Entry<T> cursor, prev;
+        // ready flag is used to make sure the element is ready to be remvoved
+        boolean ready;
 
         SkipListIterator(){
             this.cursor = head;
+            this.prev = null;
+            this.ready = false;
         }
 
         @Override
@@ -243,12 +259,26 @@ public class SkipList<T extends Comparable<? super T>> {
 
         @Override
         public T next() {
-            return (T) cursor.next[0].getElement();
+            this.prev = this.cursor;
+            this.cursor = this.cursor.next[0];
+            this.ready = true;
+            return this.cursor.getElement();
         }
 
+        // Removes the element (cursor) most recent next()
+        // Remove can be used only after next has been called
 		@Override
 		public void remove() {
-			
+			if(!this.ready){
+                throw new NoSuchElementException();
+            }
+            this.prev.next[0] = this.cursor.next[0];
+            if(this.cursor == tail){
+                tail = this.prev;
+            }
+            this.cursor = this.prev;
+            ready = false;
+            size--;
 		}
     }
 
@@ -267,7 +297,12 @@ public class SkipList<T extends Comparable<? super T>> {
 
     // Optional operation: Reorganize the elements of the list into a perfect skip list
     // Not a standard operation in skip lists. Eligible for EC.
-    public void rebuild() {  }
+    public void rebuild() { 
+        // T[] elementArray;
+        // for(int i=0; i<=this.size()-1; i++){
+        //     elementArray[i] = this.re
+        // }
+    }
 
     // Remove x from list.  Removed element is returned. Return null if x not in list
     public T remove(T x) {
@@ -288,6 +323,7 @@ public class SkipList<T extends Comparable<? super T>> {
         return this.size;
     }
 
+    // Prints the skiplist starting from top most level of the skiplist
     private void printList(){
         System.out.println("SkipList");
         for(int i=this.maxLevel-1; i>=0; i--){
@@ -301,6 +337,7 @@ public class SkipList<T extends Comparable<? super T>> {
         }
     }
 
+    // Prints the span array of the nodes of the skiplist
     private void printSpanList(){
         Entry<T> cursor = this.head;
         while(cursor != this.tail){
@@ -313,6 +350,7 @@ public class SkipList<T extends Comparable<? super T>> {
         }
     }
 
+    // Used this function to just check if the last array is filled with proper nodes after the find(T x) method 
     private void printLastArray(){
         System.out.println("Last Array");
         for(int i =0; i<= this.maxLevel-1; i++){
@@ -323,14 +361,14 @@ public class SkipList<T extends Comparable<? super T>> {
 
     public static void main(String[] args) {
         SkipList<Integer> sl = new SkipList<>();
-        // Random random = new Random();
-        for(int i=5; i>=1; i--){
-            sl.add(i);
+        Random random = new Random();
+        for(int i=10; i>=1; i--){
+            sl.add(random.nextInt(60));
         }
-        // System.out.println("Max Level of this SkipList -> "+sl.maxLevel);
+        System.out.println("Max Level -> "+sl.maxLevel);
+        System.out.println("Size -> "+sl.size());
         sl.printList();
-        // sl.spanFiller();
-        sl.printSpanList();
-        System.out.println(sl.getLog(5));
+        // sl.printSpanList();
+        System.out.println(sl.get(9));
     }
 }
