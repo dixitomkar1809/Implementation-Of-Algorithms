@@ -83,7 +83,6 @@ public class SinglyLinkedList<T> implements Iterable<T> {
 	for(T item: this) {
 	    System.out.print(item + " ");
 	}
-
 	System.out.println();
     }
 
