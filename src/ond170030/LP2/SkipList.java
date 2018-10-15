@@ -14,12 +14,11 @@ import java.util.*;
 
     static class rebuildElement<E>{
         E element;
-
         public rebuildElement(E element){
             this.element = element;
         }
+        public E getElement(){ return element;}
     }
-
 
     static class Entry<E> {
         E element;
@@ -45,6 +44,7 @@ import java.util.*;
     public SkipList() {
         this.head = new Entry<>(null, PossibleLevels);
         this.tail = new Entry<>(null, PossibleLevels);
+        this.tail.prev = this.head;
         this.size = 0;
         this.maxLevel = 1;
         this.last = new Entry[33];
@@ -57,9 +57,11 @@ import java.util.*;
         }
     }
 
-    // returns the level for the new skiplist node 
+    // 
+    /**
+     * returns the level for the new skiplist node 
+     */
     private int chooseLevel(){
-        // Slow Method
         int lev = 1;
         while(this.random.nextBoolean()){
             if(lev >= 33){
@@ -74,28 +76,21 @@ import java.util.*;
         return lev;
     }
 
-    // Add x to list. If x already exists, reject it. Returns true if new node is added to list
+    /**
+     * Add x to list. If x already exists, reject it. Returns true if new node is added to list
+     */
     public boolean add(T x) { 
         if(contains(x)){
             return false;
         }else{
-            int lev = this.chooseLevel();
-            Entry<T> newNode = new Entry<T>(x, lev);
-            // newNode.span[0] = 1;
-            for(int i = 0; i <= lev-1; i++){
-                newNode.next[i] = this.last[i].next[i];
-                this.last[i].next[i] = newNode;
-            }
-            newNode.next[0].prev = newNode;
-            newNode.prev = this.last[0];
-            // System.out.println("Added-> "+newNode.getElement());
-            this.spanFiller();
-            this.size+=1;
-            return true;
+            return add(x, this.chooseLevel());
         }
     }
-    // Fills the span array, the span of the last node will be zero as it would be pointing to the tail of the Skiplist, 
-    // the span of a node at a certain height which points to the tail will be just the count of nodes it would jump you not including the tail
+
+    /**
+     * Used for getLog and also in add, remove and rebuild methods to find the spans at each level for   each node
+     * Fills the span array, the span of the last node will be zero as it would be pointing to the tail of the Skiplist,the span of a node at a certain height which points to the tail will be just the count of nodes it would jump you not including the tail
+     */
     private void spanFiller(){
         for(int i=this.maxLevel-1; i>=0; i-- ){
             Entry<T> cursor = this.head;
@@ -106,8 +101,13 @@ import java.util.*;
         }
     }
 
-    // SpanFinder finds the number of nodes you can jump
-    // here we use count to store the number of nodes we jump, which is initialized to zero incase of all elements except tail, where as tail is initialized to -1;
+    /**
+     * SpanFinder finds the number of nodes you can jump
+    here we use count to store the number of nodes we jump, which is initialized to zero incase of all elements except tail, where as tail is initialized to -1;
+     * @param n1, nodes to calculate the span between them at a Level
+     * @param n2
+     * @param level
+     */
     private void spanFinder(Entry<T> n1, Entry<T> n2, int level){
         Entry<T> cursor = n1;
         int count = 0;
@@ -118,11 +118,14 @@ import java.util.*;
             count+=1;
             n1.span[level] = count;
             cursor = cursor.next[0];
-        }
-        // System.out.println("Span of "+n1.getElement()+" is "+n1.span[level]);
+        };
     }
 
-    // Find smallest element that is greater or equal to x
+    /**
+     * Finds smallest element that is greater or equal to x
+     * @param x, where x being element of a node to find ceiling
+     * @return ceiling of x 
+     */
     public T ceiling(T x) {
         if(this.isEmpty()){
             return null;
@@ -137,7 +140,10 @@ import java.util.*;
         }
     }
 
-    // fills the last array of the node with all the nodes which are visited to find T x
+    /**
+     * helper method that fills the last array of the node with all the nodes which are visited to find T x
+     * @param x, where x being the element we are finding
+     */
     private void find(T x){
         Entry<T> cursor = this.head;
         for(int i = this.maxLevel - 1; i >= 0; i--){
@@ -148,7 +154,11 @@ import java.util.*;
         }
     }
 
-    // Does list contain x?
+    /**
+     * Method to check if the list contains a certain element
+     * @param x, x being element of a node
+     * @return
+     */
     public boolean contains(T x) {
         this.find(x);
         if(this.last[0].next[0] != this.tail && this.last[0].next[0].getElement().equals(x)){
@@ -158,7 +168,11 @@ import java.util.*;
         }
     }
 
-    // Return first element of list
+    
+    /**
+     * Method to return first element of the skiplist
+     * @return first element of skiplist
+     */
     public T first() {
         if(isEmpty()){
             return null;
@@ -172,7 +186,12 @@ import java.util.*;
         return null;
     }
 
-    // Find largest element that is less than or equal to x
+    
+    /**
+     * Find largest element that is less than or equal to x 
+     * @param x
+     * @return floor of element x 
+     */
     public T floor(T x) {
         if(this.isEmpty()){
             return null;
@@ -185,18 +204,26 @@ import java.util.*;
         }
     }
 
-    // Return element at index n of list.  First element is at index 0.
+    /**
+     * Return element at index n of list.  First element is at index 0.
+     * @param n
+     * @return element at nth index
+     */
     public T get(int n){
         if(n < 0 || n > this.size() - 1){
-            throw new NoSuchElementException();
+            return null;
         }
-        return this.getLog(n);
+        return this.getLinear(n);
     }
 
-    // O(n) algorithm for get(n)
+    /**
+     * O(n) algorithm for get(n)
+     * @param n
+     * @return element at nth index
+     */
     public T getLinear(int n) {
         if(isEmpty()){
-            throw new NoSuchElementException();
+            return null;
         }else{
             Entry<T> cursor =this.head.next[0];
             for(int i=1; i<=n; i++){
@@ -207,10 +234,15 @@ import java.util.*;
     }
 
     // Optional operation: Eligible for EC.
-    // O(log n) expected time for get(n). Requires maintenance of spans, as discussed in class.
+    // 
+    /**
+     * O(log n) algorithm for get(n), uses the spanFiller method, uncomment the spanfiller call in add and remove
+     * @param n
+     * @return
+     */
     public T getLog(int n) {
         if(this.isEmpty()){
-            throw new NoSuchElementException();
+            return null;
         }
         else{
             Entry<T> cursor = this.head;
@@ -225,7 +257,10 @@ import java.util.*;
         }
     }
 
-    // Is the list empty?
+    /**
+     * returns true if list is empty
+     * @return
+     */
     public boolean isEmpty() {
         if(this.size() == 0){
             return true;
@@ -234,30 +269,33 @@ import java.util.*;
         }
     }
 
-    // Iterate through the elements of list in sorted order
+    /**
+     * Iterate through the elements of list in sorted order
+     * @return
+     */
     public Iterator<T> iterator() {
-        return new SkipListIterator();
+        return new SkipListIterator(this);
     }
 
     protected class SkipListIterator implements Iterator<T>{
-        Entry<T> cursor, prev;
+        SkipList<T> skipList;
+        Entry<T> cursor, tail;
         // ready flag is used to make sure the element is ready to be remvoved
         boolean ready;
 
-        SkipListIterator(){
-            this.cursor = head;
-            this.prev = null;
+        SkipListIterator(SkipList<T> skipList){
+            this.cursor = skipList.head;
+            this.tail = skipList.tail;
             this.ready = false;
         }
 
         @Override
         public boolean hasNext() {
-            return cursor.next[0] != null;
+            return cursor.next[0] != this.tail;
         }
 
         @Override
         public T next() {
-            this.prev = this.cursor;
             this.cursor = this.cursor.next[0];
             this.ready = true;
             return this.cursor.getElement();
@@ -270,17 +308,16 @@ import java.util.*;
 			if(!this.ready){
                 throw new NoSuchElementException();
             }
-            this.prev.next[0] = this.cursor.next[0];
-            if(this.cursor == tail){
-                tail = this.prev;
-            }
-            this.cursor = this.prev;
-            ready = false;
-            size--;
+            this.cursor = this.cursor.prev;
+            skipList.remove((T) this.cursor.next[0].getElement());
+            this.ready = false;
+            
 		}
     }
 
-    // Return last element of list
+    /**
+     *  Returns last element of list
+     */
     public T last() {
         if(this.isEmpty()){
             return null;
@@ -293,8 +330,9 @@ import java.util.*;
         }
     }
 
-    // Optional operation: Reorganize the elements of the list into a perfect skip list
-    // Not a standard operation in skip lists. Eligible for EC.
+    /**
+     * rebuilds the skiplist into a perfect skiplist
+     */
     public void rebuild() {
         rebuildElement[] elements = new rebuildElement[size()];
         int[] perfectLevels = new int[this.size()];
@@ -314,37 +352,38 @@ import java.util.*;
             this.head.span[i] = 0;
         }
         calculatePerfectLevels(0, n-1, perfectLevels);
-        for(int i = 0; i < n; i++){
-            this.add((T) elements[i].element, perfectLevels[i]);
+        for(int i = n-1; i >= 0; i--){
+            this.add((T) elements[i].getElement(), perfectLevels[i]);
         }
-        for(int i=0; i<perfectLevels.length;i++){
-            System.out.print(perfectLevels[i]+" ");
-        }
-        System.out.println();
-        for(int i=0; i<elements.length;i++){
-            System.out.print(elements[i].element+" ");
-        }
-        System.out.println();
-
-    }
-    //  Add method to be used in the rebuild function, 
-    private void add(T element, int i) {
-            Entry<T> newNode = new Entry<T>(element, i);
-            // newNode.span[0] = 1;
-            for(int j = 0; j <= i-1; j++){
-                newNode.next[j] = this.last[j].next[j];
-                this.last[j].next[j] = newNode;
-            }
-            newNode.next[0].prev = newNode;
-            newNode.prev = this.last[0];
-            this.spanFiller();
-            this.size+=1;
-            System.out.println(newNode.next[0].getElement());
     }
 
-    // calculate levels that should be there in a perfect skiplist and then assign each node to their perfect level. 
-    // we use the divide and conquer method to set levels 
-    // calculatePerfectLevels for first to last which then divides into two first to mid and mid+1 to end
+    /**
+     * Add method to be used in the rebuild function,
+     * @param element, element to be added in the list
+     * @param i, the height of the next array
+     * @return true if added, false if already exists
+     */
+    private boolean add(T element, int i) {
+        Entry<T> newNode = new Entry<T>(element, i);
+        // newNode.span[0] = 1;
+        for(int j = 0; j <= i-1; j++){
+            newNode.next[j] = this.last[j].next[j];
+            this.last[j].next[j] = newNode;
+        }
+        newNode.next[0].prev = newNode;
+        newNode.prev = this.last[0];
+        // this.spanFiller();
+        this.size+=1;
+        return true;
+    }
+
+     
+    /**
+     *  calculate levels that should be there in a perfect skiplist and then assign each node to their     perfect level. 
+     * we use the divide and conquer method to set levels 
+     * calculatePerfectLevels for first to last which then divides into two first to mid and mid+1 to end
+     * @param first and last positions in the array, and the array of levels at each index
+     */
     private void calculatePerfectLevels(int first, int last, int[] perfectLevels){
         if(last<first){
             return;
@@ -361,31 +400,42 @@ import java.util.*;
         }
     }
 
-    // Remove x from list.  Removed element is returned. Return null if x not in list
+    /**
+     * Remove x from list.  Removed element is returned. Return null if x not in list
+     * @param x
+     * @return
+     */
     public T remove(T x) {
         if(!this.contains(x)){
             return null;
         }
-        Entry<T> ent = this.last[0].next[0];
-        for(int i = 0; i <= ent.next.length-1; i++){
-            last[i].next[i] = ent.next[i];
+        Entry<T> cursor = this.last[0].next[0];
+        for(int i = 0; i <= cursor.next.length-1; i++){
+            last[i].next[i] = cursor.next[i];
         }
+        cursor.next[0].prev = cursor.prev;
         this.size-=1;
         this.spanFiller();
-        return (T) ent.getElement();
+        return (T) cursor.getElement();
     }
 
-    // Return the number of elements in the list
+    /**
+     * Return the number of elements in the list
+     * @return 
+     */
     public int size() {
         return this.size;
     }
 
-    // Prints the skiplist starting from top most level of the skiplist
+    // 
+    /** Helper Method
+     * Prints the skiplist starting from top most level of the skiplist
+     */
     private void printList(){
-        System.out.println("SkipList");
+        // System.out.println("SkipList Nodes-> ");
         for(int i=this.maxLevel-1; i>=0; i--){
             Entry<T> cursor = this.head;
-            System.out.println("Level: "+i);
+            // System.out.println("Level: "+i);
             while(cursor != this.tail){
                 System.out.print(cursor.getElement() + " ");
                 cursor = cursor.next[i];
@@ -394,11 +444,14 @@ import java.util.*;
         }
     }
 
-    // Prints the span array of the nodes of the skiplist
+    
+    /**
+     * Helper method to print the span array of the nodes of the skiplist
+     */
     private void printSpanList(){
         Entry<T> cursor = this.head;
         while(cursor != this.tail){
-            System.out.println("Size of Span array of "+cursor.getElement()+" ->"+ cursor.span.length);
+            // System.out.println("Size of Span array of "+cursor.getElement()+" ->"+ cursor.span.length);
             for(int i = cursor.span.length-1; i >=0 ; i-- ){
                 System.out.print(cursor.span[i]+" ");
             }
@@ -407,27 +460,13 @@ import java.util.*;
         }
     }
 
-    // Used this function to just check if the last array is filled with proper nodes after the find(T x) method 
+    /**
+     * Helper method to just check if the last array is filled with proper nodes after the find(T x) method 
+     */
     private void printLastArray(){
         for(int i =0; i<= this.maxLevel-1; i++){
             System.out.println(this.last[i].getElement());
         }
         return;
-    }
-
-    public static void main(String[] args) {
-        SkipList<Integer> sl = new SkipList<>();
-        Random random = new Random();
-        for(int i=7; i>=1; i--){
-            sl.add(random.nextInt(100));
-        }
-        System.out.println("Max Level -> "+sl.maxLevel);
-        System.out.println("Size -> "+sl.size());
-        sl.printList();
-        sl.rebuild();
-        System.out.println("Max Level -> "+sl.maxLevel);
-        System.out.println("Size -> "+sl.size());
-        sl.printList();
-        sl.printSpanList();
     }
 }
