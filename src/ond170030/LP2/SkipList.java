@@ -5,12 +5,13 @@ import java.util.*;
 /* Starter code for LP2 */
 // Skeleton for skip list implementation.
 
-    public class SkipList<T extends Comparable<? super T>> {
+public class SkipList<T extends Comparable<? super T>> {
         static final int PossibleLevels = 33;
         Entry<T> head, tail;
         private int size, maxLevel;
         Entry<T>[] last;
         Random random;
+        int[] position;
 
     static class rebuildElement<E>{
         E element;
@@ -48,16 +49,17 @@ import java.util.*;
         this.size = 0;
         this.maxLevel = 1;
         this.last = new Entry[33];
+        this.position = new int[33];
         this.random = new Random();
         for(int i =0; i<= PossibleLevels-1; i++){
             this.head.next[i] = this.tail;
             this.head.span[i] = 0;
             this.tail.span[i] = 0;
             this.last[i] = this.head;
+            this.position[i] = 0;
         }
     }
 
-    // 
     /**
      * returns the level for the new skiplist node 
      */
@@ -71,7 +73,9 @@ import java.util.*;
             }
         }
         if(lev > this.maxLevel){
-            maxLevel = lev;
+            this.maxLevel = lev;
+            this.head.next[this.maxLevel-1] = this.tail;
+            this.head.span[this.maxLevel-1] = this.size;
         }
         return lev;
     }
@@ -82,7 +86,10 @@ import java.util.*;
     public boolean add(T x) { 
         if(contains(x)){
             return false;
-        }else{
+        }else if( x == null){
+            throw new NullPointerException();
+        }
+        else{
             return add(x, this.chooseLevel());
         }
     }
@@ -91,13 +98,9 @@ import java.util.*;
      * Used for getLog and also in add, remove and rebuild methods to find the spans at each level for   each node
      * Fills the span array, the span of the last node will be zero as it would be pointing to the tail of the Skiplist,the span of a node at a certain height which points to the tail will be just the count of nodes it would jump you not including the tail
      */
-    private void spanFiller(){
+    private void spanFiller(Entry<T>[] node){
         for(int i=this.maxLevel-1; i>=0; i-- ){
-            Entry<T> cursor = this.head;
-            while(cursor != this.tail){
-                this.spanFinder(cursor, cursor.next[i], i);
-                cursor = cursor.next[i];
-            }
+            this.spanFinder(node[i], node[i].next[i], i);
         }
     }
 
@@ -147,7 +150,9 @@ import java.util.*;
     private void find(T x){
         Entry<T> cursor = this.head;
         for(int i = this.maxLevel - 1; i >= 0; i--){
+            this.position[i] = 0;
             while (cursor.next[i] != this.tail && x.compareTo(((T)cursor.next[i].getElement())) > 0) {
+                this.position[i]+=cursor.span[i];
                 cursor = cursor.next[i];
             }
             this.last[i] = cursor;
@@ -213,7 +218,7 @@ import java.util.*;
         if(n < 0 || n > this.size() - 1){
             return null;
         }
-        return this.getLinear(n);
+        return this.getLog(n);
     }
 
     /**
@@ -242,6 +247,7 @@ import java.util.*;
      */
     public T getLog(int n) {
         if(this.isEmpty()){
+            // System.out.println("Null from get log");
             return null;
         }
         else{
@@ -363,18 +369,54 @@ import java.util.*;
      * @param i, the height of the next array
      * @return true if added, false if already exists
      */
-    private boolean add(T element, int i) {
-        Entry<T> newNode = new Entry<T>(element, i);
-        // newNode.span[0] = 1;
-        for(int j = 0; j <= i-1; j++){
+    private boolean add(T element, int level) {
+        Entry<T> newNode = new Entry<T>(element, level);
+        /**
+         * When the list is empty and there are no nodes apart from just the head and tail, the span of head is one and the span of new element that would be inserted between head and tail will be zero since that node wont be going over any nodes, since the next is the tail.
+         */
+        if(this.isEmpty()){
+            for(int i=0; i < this.maxLevel; i++){
+                head.span[i] = 1;
+            }
+            for(int i=0; i< level; i++){
+                newNode.span[i] = 0;
+            }
+        }else{
+            int start = this.getTravelledDistance();
+            int previous = -1;
+
+            // Computing Spans
+            for(int i=this.maxLevel-1; i >= 0; i--){
+                previous+=position[i];
+                if(i<level){
+                    newNode.span[i] = this.last[i].span[i] + 1 - (start - previous);
+                    this.last[i].span[i] = start - previous;
+                }else{
+                    this.last[i].span[i]+=1;
+                }
+            }
+        }
+        for(int j = 0; j <= level-1; j++){
             newNode.next[j] = this.last[j].next[j];
             this.last[j].next[j] = newNode;
+
         }
         newNode.next[0].prev = newNode;
         newNode.prev = this.last[0];
-        // this.spanFiller();
         this.size+=1;
         return true;
+    }
+
+    /**
+     * Helper method for add 
+     * @return returns the number of nodes spanned by the find() or contains()
+     */
+    public int getTravelledDistance(){
+        int start = 0;
+        for(int i = this.maxLevel -1; i >= 0; i--){
+            start+=this.position[i];
+        }
+        return start;
     }
 
      
@@ -411,11 +453,14 @@ import java.util.*;
         }
         Entry<T> cursor = this.last[0].next[0];
         for(int i = 0; i <= cursor.next.length-1; i++){
-            last[i].next[i] = cursor.next[i];
+            this.last[i].next[i] = cursor.next[i];
+            this.last[i].span[i] += cursor.span[i]-1;
+        }
+        for(int i=cursor.next.length; i < this.maxLevel; i++){
+            this.last[i].span[i]-=1;
         }
         cursor.next[0].prev = cursor.prev;
         this.size-=1;
-        this.spanFiller();
         return (T) cursor.getElement();
     }
 
@@ -437,7 +482,7 @@ import java.util.*;
             Entry<T> cursor = this.head;
             // System.out.println("Level: "+i);
             while(cursor != this.tail){
-                System.out.print(cursor.getElement() + " ");
+                // System.out.print(cursor.getElement() + " ");
                 cursor = cursor.next[i];
             }
             System.out.println();
@@ -464,9 +509,11 @@ import java.util.*;
      * Helper method to just check if the last array is filled with proper nodes after the find(T x) method 
      */
     private void printLastArray(){
+        // System.out.println("--Last--");
         for(int i =0; i<= this.maxLevel-1; i++){
             System.out.println(this.last[i].getElement());
         }
+        // System.out.println("--Last Ends--");
         return;
     }
 }

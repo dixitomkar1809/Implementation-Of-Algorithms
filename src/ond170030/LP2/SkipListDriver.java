@@ -1,5 +1,4 @@
 package ond170030.LP2;
-
 import ond170030.LP2.Timer;
 import java.io.File;
 import java.io.FileNotFoundException;
