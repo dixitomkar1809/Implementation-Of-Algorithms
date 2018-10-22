@@ -1,6 +1,27 @@
 {
     "configurations": [
-
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - doublehashing",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "ond170030.SP7.doublehashing",
+            "args": "",
+            "projectName": "ImplementationAssignments"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - RobinhoodHashing",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "ond170030.SP7.RobinhoodHashing",
+            "args": "",
+            "projectName": "ImplementationAssignments"
+        },
         {
             "type": "java",
             "name": "Debug (Launch) with Arguments Prompt",
@@ -19,7 +40,7 @@
             "console": "internalConsole",
             "stopOnEntry": false,
             "mainClass": "ond170030.LP2.SkipListDriver",
-            "args": "/Users/omkardixit/Documents/Fall18/Implementation/ImplementationAssignments/src/ond170030/LP2/lp2-inputs/lp2-in13.txt",
+            "args": "/Users/omkardixit/Documents/Fall18/Implementation/ImplementationAssignments/src/ond170030/LP2/test-lp2/lp2-t13.txt",
             "projectName": "ImplementationAssignments"
         },
         {
