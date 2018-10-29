@@ -1,21 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9b41b743-eaad-46aa-bc87-bcfec84d3b5f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ond170030/SP7/scratch.txt" afterDir="false" />
+    <list default="true" id="9b41b743-eaad-46aa-bc87-bcfec84d3b5f" name="Default Changelist" comment="K">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/launch.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/launch.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/ond170030/LP2/SkipList$Entry.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/ond170030/LP2/SkipList$Entry.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/ond170030/LP2/SkipList$SkipListIterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/ond170030/LP2/SkipList$SkipListIterator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/ond170030/LP2/SkipList$rebuildElement.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/ond170030/LP2/SkipList$rebuildElement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/ond170030/LP2/SkipList.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/ond170030/LP2/SkipList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/ond170030/LP2/SkipListDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/ond170030/LP2/SkipListDriver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IDSA-Projects/ond170030/LP2.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IDSA-Projects/ond170030/LP2/SkipList$Entry.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IDSA-Projects/ond170030/LP2/SkipList$Entry.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IDSA-Projects/ond170030/LP2/SkipList$SkipListIterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IDSA-Projects/ond170030/LP2/SkipList$SkipListIterator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IDSA-Projects/ond170030/LP2/SkipList$rebuildElement.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IDSA-Projects/ond170030/LP2/SkipList$rebuildElement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IDSA-Projects/ond170030/LP2/SkipList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IDSA-Projects/ond170030/LP2/SkipList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IDSA-Projects/ond170030/LP2/SkipListDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IDSA-Projects/ond170030/LP2/SkipListDriver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IDSA-Projects/ond170030/SP7/DoubleHashing.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IDSA-Projects/ond170030/SP7/DoubleHashing.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IDSA-Projects/ond170030/SP7/HashInteger.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IDSA-Projects/ond170030/SP7/HashInteger.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IDSA-Projects/ond170030/SP7/scratch.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ond170030/SP7/DoubleHashing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ond170030/SP7/DoubleHashing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ond170030/SP7/HashInteger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ond170030/SP7/HashInteger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ond170030/SP7/HashInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ond170030/SP7/HashInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ond170030/SP7/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/ond170030/SP7/readme.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,7 +22,7 @@
     <session id="1373685787">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="1" />
@@ -44,13 +38,13 @@
           <entry key="LP1" value="1" />
           <entry key="Readme" value="1" />
           <entry key="SP4" value="1" />
-          <entry key="java" value="37" />
+          <entry key="java" value="43" />
           <entry key="txt" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="37" />
+          <entry key="JAVA" value="43" />
           <entry key="PLAIN_TEXT" value="8" />
           <entry key="Scratch" value="2" />
         </counts>
@@ -58,48 +52,65 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="13" />
-          <entry key="java" value="10450" />
-          <entry key="txt" value="107" />
+          <entry key="java" value="11247" />
+          <entry key="txt" value="151" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="10450" />
-          <entry key="PLAIN_TEXT" value="120" />
+          <entry key="JAVA" value="11247" />
+          <entry key="PLAIN_TEXT" value="164" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ond170030/SP7/DoubleHashing.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2197">
-              <caret line="108" column="38" lean-forward="true" selection-start-line="108" selection-start-column="38" selection-end-line="108" selection-end-column="38" />
+            <state relative-caret-position="370">
+              <caret line="223" column="52" lean-forward="true" selection-end-line="341" selection-end-column="1" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
-                <element signature="e#1137#1138#0" expanded="true" />
-                <element signature="e#1206#1207#0" expanded="true" />
-                <element signature="e#1458#1459#0" expanded="true" />
-                <element signature="e#1519#1520#0" expanded="true" />
-                <element signature="e#1549#1550#0" expanded="true" />
-                <element signature="e#1572#1573#0" expanded="true" />
-                <element signature="e#1757#1758#0" expanded="true" />
-                <element signature="e#1825#1826#0" expanded="true" />
-                <element signature="e#4861#4862#0" expanded="true" />
-                <element signature="e#4884#4885#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$USER_HOME$/Desktop/ond170030/DoubleHashing.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="218">
+              <caret line="162" column="26" selection-start-line="162" selection-start-column="11" selection-end-line="162" selection-end-column="26" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ond170030/SP7/scratch.txt">
+        <entry file="file://$PROJECT_DIR$/src/ond170030/SP7/HashInterface.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+            <state relative-caret-position="90">
+              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ond170030/SP7/HashInteger.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="24" column="11" lean-forward="true" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -115,20 +126,10 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>power</find>
-      <find>printlist</find>
-      <find>System.out.println</find>
-      <find>System.out.printlns</find>
-      <find>get</find>
-      <find>base(</find>
-      <find>size</find>
-      <find>find</find>
-      <find>compare</find>
       <find>isEmp</find>
       <find>cursor</find>
       <find>head</find>
       <find>hasNext</find>
-      <find>add</find>
       <find>sending</find>
       <find>temp</find>
       <find>.element</find>
@@ -145,6 +146,16 @@
       <find>9924</find>
       <find>9303</find>
       <find>indexF</find>
+      <find>index</find>
+      <find>contains</find>
+      <find>1020</find>
+      <find>hash2</find>
+      <find>hash(</find>
+      <find>add</find>
+      <find>find</find>
+      <find>==</find>
+      <find>remove</find>
+      <find>table[location]</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -172,8 +183,12 @@
         <option value="$PROJECT_DIR$/src/ond170030/LP2/SLIterator.java" />
         <option value="$PROJECT_DIR$/src/ond170030/LP2/SkipList.java" />
         <option value="$PROJECT_DIR$/src/ond170030/SP7/doublehashing.java" />
-        <option value="$PROJECT_DIR$/src/ond170030/SP7/DoubleHashing.java" />
         <option value="$PROJECT_DIR$/src/ond170030/SP7/scratch.txt" />
+        <option value="$PROJECT_DIR$/src/ond170030/SP7/HashInterface.java" />
+        <option value="$PROJECT_DIR$/src/ond170030/SP7/readme.txt" />
+        <option value="$PROJECT_DIR$/src/ond170030/SP7/HashInteger.java" />
+        <option value="$PROJECT_DIR$/src/ond170030/SP7/DoubleHashing.java" />
+        <option value="$USER_HOME$/Desktop/ond170030/DoubleHashing.java" />
       </list>
     </option>
   </component>
@@ -362,7 +377,7 @@
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" x="353" y="199" width="568" height="293" id="Run" order="2" type="WINDOWED" weight="0.21506849" />
+      <window_info anchor="bottom" x="0" y="22" width="1280" height="724" id="Run" order="2" type="FLOATING" weight="0.21506849" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -490,17 +505,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ond170030/SP7/HashInteger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-          <folding>
-            <element signature="e#159#160#0" expanded="true" />
-            <element signature="e#200#201#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ond170030/LP2/SkipList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="347">
@@ -534,30 +538,50 @@
     <entry file="file://$PROJECT_DIR$/src/ond170030/SP1/README.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ond170030/SP7/scratch.txt">
+    <entry file="file://$PROJECT_DIR$/src/ond170030/SP7/readme.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        <state relative-caret-position="105">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ond170030/SP7/HashInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ond170030/SP7/HashInteger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="24" column="11" lean-forward="true" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ond170030/SP7/DoubleHashing.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2197">
-          <caret line="108" column="38" lean-forward="true" selection-start-line="108" selection-start-column="38" selection-end-line="108" selection-end-column="38" />
+        <state relative-caret-position="370">
+          <caret line="223" column="52" lean-forward="true" selection-end-line="341" selection-end-column="1" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#1137#1138#0" expanded="true" />
-            <element signature="e#1206#1207#0" expanded="true" />
-            <element signature="e#1458#1459#0" expanded="true" />
-            <element signature="e#1519#1520#0" expanded="true" />
-            <element signature="e#1549#1550#0" expanded="true" />
-            <element signature="e#1572#1573#0" expanded="true" />
-            <element signature="e#1757#1758#0" expanded="true" />
-            <element signature="e#1825#1826#0" expanded="true" />
-            <element signature="e#4861#4862#0" expanded="true" />
-            <element signature="e#4884#4885#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/ond170030/DoubleHashing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="162" column="26" selection-start-line="162" selection-start-column="11" selection-end-line="162" selection-end-column="26" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>

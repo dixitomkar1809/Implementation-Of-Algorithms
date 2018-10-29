@@ -106,6 +106,9 @@ public class DoubleHashing<K extends HashInterface, V>  {
 		int xspot = 0;
 		while(true) {
 			index = getIndex(key, k);
+			if(index < 0){
+				index = index * -1;
+			}
 			if(table[index] != null) {
 				if(table[index].key.equals(key) && table[index].status == false) {
 					return index;
@@ -178,14 +181,19 @@ public class DoubleHashing<K extends HashInterface, V>  {
 	 * @param key
 	 * @return
 	 */
-	public HashEntry remove(K key)
+	public K remove(K key)
 	{
 		int location = 0;
-		location = this.find(key);
-		if(this.table[location].key == key){
-			HashEntry result = this.table[location];
-			result.status = true;
-			return result;
+		location = find(key);
+		if(this.table[location] != null){
+			if(this.table[location].key.equals(key)){
+				HashEntry result = this.table[location];
+				result.status = true;
+				return (K) result.key;
+			}
+			else{
+				return null;
+			}
 		}
 		else{
 			return null;
@@ -200,11 +208,16 @@ public class DoubleHashing<K extends HashInterface, V>  {
 	public boolean contains(K key) {
 		int location = 0;
 		location = find(key);
-		if(table[location] == key) {
-			return true;
-		}
-		else
+		if(table[location] != null){
+			if(table[location].key.equals(key)) {
+				return true;
+			}
+			else
+				return false;
+		}else{
 			return false;
+		}
+
 	}
 
 	/**
@@ -214,7 +227,7 @@ public class DoubleHashing<K extends HashInterface, V>  {
 	{
 		System.out.println("\nHash Table");
 		for (int i = 0; i < TABLE_SIZE; i++)
-			if (table[i] != null)
+			if (table[i] != null && table[i].status==false)
 				System.out.print(table[i].value+", ");
 	}
 
@@ -279,11 +292,11 @@ public class DoubleHashing<K extends HashInterface, V>  {
 		Integer[] loaderArray = new Integer[1000000];
 		int loaderArraySize = loaderArray.length;
 		for(int i = 0; i < loaderArraySize; i++) {
-			loaderArray[i] = random.nextInt(10000);
+			loaderArray[i] = random.nextInt(1000000);
 //			loaderArray[i] = i;
 		}
 		int Key, Value;
-
+		System.out.println("***Adding "+loaderArraySize+" number of entries to the Java's HashMap and DoubleHashing***");
 		/**
 		 * Java HashMap Implementation
 		 */
@@ -320,6 +333,10 @@ public class DoubleHashing<K extends HashInterface, V>  {
 		 * Distinct Elements of DoubleHashing
 		 */
 		System.out.println("\nDistinct Elements of DoubleHashing - "+doubleHashing.distinctElements(loaderArray));
-
+		int x = random.nextInt(1000000);
+		System.out.println("\nRemoving -> "+x);
+		System.out.println(doubleHashing.remove(new HashInteger(x)));
+		x = random.nextInt(1000000);
+		System.out.println("\nContains -> "+x+" "+doubleHashing.contains(new HashInteger(x)));
 	}
 }

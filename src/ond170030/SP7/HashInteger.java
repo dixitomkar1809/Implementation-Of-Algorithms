@@ -1,3 +1,8 @@
+/**
+ * Author: Omkar Dixit, DC Vishwanath
+ */
+
+
 package ond170030.SP7;
 
 public class HashInteger implements HashInterface{
@@ -19,8 +24,11 @@ public class HashInteger implements HashInterface{
 
   @Override
   public int hashCode2() {
-    return this.field * this.field;
+    return this.field + 7;
   }
+//  public int hashCode2() {
+//    return this.field * this.field;
+//  }
 
   public boolean equals(Object obj){
     return this.field.equals(((HashInteger) obj).field);

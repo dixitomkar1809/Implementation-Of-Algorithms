@@ -2,6 +2,28 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - DFS",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "ond170030.SP8.DFS",
+            "args": "",
+            "projectName": "ImplementationAssignments"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - BFS",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "ond170030.SP8.BFS",
+            "args": "",
+            "projectName": "ImplementationAssignments"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - doublehashing",
             "request": "launch",
             "cwd": "${workspaceFolder}",
