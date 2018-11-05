@@ -1,0 +1,52 @@
+64M -
+    Choice: 3
+    Time: 14716 msec.
+    Memory: 491 MB / 612 MB.
+
+    Choice: 4
+    Time: 14271 msec.
+    Memory: 491 MB / 612 MB
+
+    Choice: 2
+    Time: 20792 msec.
+    Memory: 644 MB / 865 MB.
+
+32M -
+    Choice: 3
+    Time: 7353 msec.
+    Memory: 247 MB / 368 MB.
+
+    Choice: 2
+    Time: 9325 msec.
+    Memory: 531 MB / 785 MB.
+
+    Choice: 4
+    Time: 6439 msec.
+    Memory: 247 MB / 368 MB.
+
+16M -
+
+    Choice: 3
+    Time: 3568 msec.
+    Memory: 125 MB / 184 MB.
+
+    Choice: 2
+    Time: 13767 msec.
+    Memory: 229 MB / 752 MB.
+
+    Choice: 4
+    Time: 3246 msec.
+    Memory: 125 MB / 184 MB.
+
+8M -
+    Choice: 3
+    Time: 2477 msec.
+    Memory: 64 MB / 123 MB.
+
+    Choice: 4
+    Time: 1756 msec.
+    Memory: 64 MB / 123 MB.
+
+    Choice: 2
+    Time: 7469 msec.
+    Memory: 236 MB / 346 MB.
