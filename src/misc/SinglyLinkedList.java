@@ -31,6 +31,13 @@ public class SinglyLinkedList {
         }
         System.out.println();
     }
+
+    public void addFirst(int data){
+        Node new_node = new Node(data);
+        new_node.next = this.head;
+        this.head = new_node;
+
+    }
     
 //    Insert Node at the head of the list
     public void push(int data){
