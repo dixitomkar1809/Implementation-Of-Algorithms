@@ -1,10 +1,11 @@
-/**
- * Starter code for LP3
- *
- * @author
+/** LP3
+ * GROUP LP 17 - MEMBERS:    OMKAR DIXIT      netID: ond170030
+ *  *                        KARAN KANANI     netID: kyk170030
+ *  *                        TEJAS RAVI RAO   netID: txr171830
+ *  *                        SHAKTI SINGH     netID: sxs178130
  */
 
-// Change to your net id
+
 package ond170030.LP3;
 
 // If you want to create additional classes, place them in this file as subclasses of MDS
@@ -16,17 +17,24 @@ import java.util.*;
 
 public class MDS {
     // Add fields of MDS here
+
+
     private Map<Long, Item> idMap;
     private Map<Long, TreeSet<Item>> descMap;
 
     // Constructors
     public MDS() {
+
+        //Use of TreeMap for id.
         idMap = new TreeMap<>();
+
+        //Use of HashMap for description
         descMap = new HashMap<>();
     }
 
+
     /* Public methods of MDS. Do not change their signatures.
-       ______________________
+       ________
        a. Insert(id,price,list): insert a new item whose description is given
        in the list.  If an entry with the same id already exists, then its
        description and price are replaced by the new values, unless list
@@ -52,6 +60,7 @@ public class MDS {
         // if item is already there in inventory
         else {
 
+
             idMap.put(id,item);
 
 
@@ -70,7 +79,7 @@ public class MDS {
     }
 
 
-
+    //Helper method to update the Description Map after an insert operation.
     private void updateDescriptionMap(Item item)
     {
         for (Long desc : item.getDescription()) {
@@ -97,6 +106,8 @@ public class MDS {
         return new Money();
     }
 
+
+
     /*
        c. Delete(id): delete item from storage.  Returns the sum of the
        long ints that are in the description of the item deleted,
@@ -109,15 +120,18 @@ public class MDS {
 
             idMap.remove(id);
 
-
+            // sum of all long ints in the description of item deleted
             for (Long desc : item.getDescription()) {
                 sum += desc;
                 Set set = descMap.get(desc);
                 set.remove(item);
             }
         }
+
         return sum;
     }
+
+
 
     /*
        d. FindMinPrice(n): given a long int, find items whose description
@@ -128,10 +142,23 @@ public class MDS {
     public Money findMinPrice(long n) {
         Set<Item> items = descMap.get(n);
 
+        // If no items are present with such description, return 0
         if(items==null||items.size()==0){
             return new Money();
         }
-        else return ((TreeSet<Item>) items).first().price;
+        //Else Return the lowest price of those items
+        else {
+
+            Iterator<Item> itr=items.iterator();
+            Money min = itr.next().getPrice();
+            while(itr.hasNext()){
+                Item c=itr.next();
+                if(min.compareTo(c.getPrice())>0)
+                    min = c.getPrice();
+
+            }
+            return min;
+        }
 
     }
 
@@ -142,10 +169,25 @@ public class MDS {
     */
     public Money findMaxPrice(long n) {
         Set<Item> items = descMap.get(n);
+
+        //If no items are present with such description, return 0
         if(items==null||items.size()==0){
             return new Money();
         }
-        else return ((TreeSet<Item>) items).last().price;
+        //Else return the highest price of those items
+        else
+        {
+
+            Iterator<Item> itr=items.iterator();
+            Money max = itr.next().getPrice();
+            while(itr.hasNext()){
+                Item c=itr.next();
+                if(max.compareTo(c.getPrice())<0)
+                    max = c.getPrice();
+
+            }
+            return max;
+        }
     }
 
     /*
@@ -155,11 +197,20 @@ public class MDS {
     */
     public int findPriceRange(long n, Money low, Money high) {
         int count=0;
+
+        //handle case where high is less than low
+        if(high.compareTo(low) == -1){
+            return 0;
+        }
+
+        //handle case where no items are present with description n
         TreeSet<Item> items = descMap.get(n);
-        if(items == null){
+        if(items == null||items.size()==0){
             return count;
         }
 
+
+        //Return the items that match description and price fall within range
         for(Item item : items){
             Money price = item.getPrice();
             if(price.compareTo(high)==0 || price.compareTo(low)==0){
@@ -186,32 +237,36 @@ public class MDS {
             long netIncrease = 0;
             NavigableMap<Long, Item> subsetIdMap = ((TreeMap) idMap).subMap(l, true, h, true);
             for (Item item : subsetIdMap.values()) {
+
+                //Convert price to cents
                 preSum = item.getPrice().cents() + item.getPrice().dollars() * 100;
+
+                //Calculate the new price in cents
                 postSum = preSum + (long) Math.floor(rate * preSum)/100;
+
+                //convert from cents to Money Format
+                Money newPrice = toMoney(postSum);
+
+
+                item.setPrice(newPrice);
+
+                //Calculate sum of the net increases of the prices
                 netIncrease+=(postSum-preSum);
             }
+
             return toMoney(netIncrease);
         }
-        return new Money();
+        return new Money(); // return 0 if (l>h)
     }
 
+
+
+    //Helper method to convert price in cents to Money format: d dollars and c cents
     private Money toMoney(long cents){
         return new Money(cents/100, (int) cents % 100);
     }
 
-    private double truncate(double bd){
-        DecimalFormat df = new DecimalFormat("#0.00");
-        df.setRoundingMode(RoundingMode.DOWN);
-        return Double.parseDouble(df.format(bd));
-    }
 
-    private Money separate(String s){
-        System.out.println(s);
-        String[] dc = s.split("\\.");
-//        System.out.println("-- Separating --");
-//        System.out.println(Long.parseLong(dc[0]) + " " +Integer.parseInt(dc[1]));
-        return new Money(Long.parseLong(dc[0]), Integer.parseInt(dc[1]));
-    }
 
 
     /*
@@ -223,12 +278,17 @@ public class MDS {
     public long removeNames(long id, java.util.List<Long> list) {
 
         long sum = 0;
+
         Item item = idMap.get(id);
+
+        //handle case where no items exist with such id.
         if(item == null)
             return sum;
 
+
         Set<Long> listSet = new HashSet<>();
         List<Long> itemDesc = item.getDescription();
+
         for(Long desc : list)
         {
             listSet.add(desc);
@@ -287,16 +347,17 @@ public class MDS {
                 c = 0;
             } else if (part.length == 1) {
                 d = Long.parseLong(s);
-
                 c = 0;
             } else {
                 d = Long.parseLong(part[0]);
                 c = Integer.parseInt(part[1]);
             }
         }
+
         public void setDollars(long d) {
             this.d = d;
         }
+
 
         public void setCents(int c) {
             this.c = c;
@@ -310,7 +371,8 @@ public class MDS {
             return c;
         }
 
-        public int compareTo(Money other) { // Complete this, if needed
+
+        public int compareTo(Money other) { //
             if (this.d > other.d)
                 return 1;
             else if (this.d < other.d)
@@ -326,16 +388,18 @@ public class MDS {
         }
 
         public String toString() {
-            return d + "." + String.format("%2s",c).replace(' ','0');
+            return d + "." + c;
+
         }
     }
 
-
+    //Item class - to hold and modify information about an item
     public static class Item implements Comparable<Item>{
         private MDS.Money price;
         private long id;
         private List<Long> description;
 
+        //Item Constructor
         public Item(long id, MDS.Money price, List<Long> description) {
             this.price = price;
             this.id = id;
@@ -352,7 +416,7 @@ public class MDS {
 
         @Override
         public int compareTo(Item item) {
-            return price.compareTo(item.price);
+            return ((Long)this.id).compareTo(item.getId());
         }
 
         @Override

@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b41b743-eaad-46aa-bc87-bcfec84d3b5f" name="Default Changelist" comment="K">
-      <change afterPath="$PROJECT_DIR$/src/ond170030/SP10/DFS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ond170030/SP10/Graph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ond170030/LP3/TLP3Driver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IDSA-Projects/ond170030/LP3/LP3Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IDSA-Projects/ond170030/LP3/LP3Driver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IDSA-Projects/ond170030/LP3/MDS.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IDSA-Projects/ond170030/LP3/MDS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IDSA-Projects/output14.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/misc/SinglyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/misc/SinglyLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ond170030/LP3/LP3Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ond170030/LP3/LP3Driver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ond170030/LP3/MDS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ond170030/LP3/MDS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ond170030/LP3/sampleInput.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/ond170030/LP3/sampleInput.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ond170030/SP1/SinglyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ond170030/SP1/SinglyLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/output14.txt" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,7 +36,7 @@
           <entry key="LP1" value="1" />
           <entry key="Readme" value="1" />
           <entry key="SP4" value="1" />
-          <entry key="java" value="70" />
+          <entry key="java" value="76" />
           <entry key="jpg" value="1" />
           <entry key="report" value="2" />
           <entry key="txt" value="16" />
@@ -54,7 +45,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Image" value="1" />
-          <entry key="JAVA" value="70" />
+          <entry key="JAVA" value="76" />
           <entry key="PLAIN_TEXT" value="19" />
           <entry key="Scratch" value="2" />
         </counts>
@@ -62,42 +53,21 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="13" />
-          <entry key="java" value="19632" />
+          <entry key="java" value="19670" />
           <entry key="report" value="153" />
           <entry key="txt" value="161" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="19632" />
+          <entry key="JAVA" value="19670" />
           <entry key="PLAIN_TEXT" value="327" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ond170030/SP1/SinglyLinkedList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="127" column="31" selection-start-line="127" selection-start-column="31" selection-end-line="127" selection-end-column="31" />
-              <folding>
-                <element signature="e#997#998#0" expanded="true" />
-                <element signature="e#1033#1034#0" expanded="true" />
-                <element signature="e#1764#1765#0" expanded="true" />
-                <element signature="e#1799#1800#0" expanded="true" />
-                <element signature="e#2069#2070#0" expanded="true" />
-                <element signature="e#2086#2087#0" expanded="true" />
-                <element signature="e#2698#2699#0" expanded="true" />
-                <element signature="e#2729#2730#0" expanded="true" />
-                <element signature="method#unzip#0;class#SinglyLinkedList#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -108,7 +78,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>hash(</find>
       <find>add</find>
       <find>==</find>
       <find>remove</find>
@@ -138,6 +107,7 @@
       <find>findpricera</find>
       <find>compare</find>
       <find>compar</find>
+      <find>Item</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -181,9 +151,10 @@
         <option value="$PROJECT_DIR$/src/ond170030/LP3/lp3-inputs/404.txt" />
         <option value="$PROJECT_DIR$/src/ond170030/LP3/sampleInput.txt" />
         <option value="$PROJECT_DIR$/src/misc/SinglyLinkedList.java" />
-        <option value="$PROJECT_DIR$/src/ond170030/LP3/MDS.java" />
         <option value="$PROJECT_DIR$/src/ond170030/LP3/LP3Driver.java" />
         <option value="$PROJECT_DIR$/src/ond170030/SP1/SinglyLinkedList.java" />
+        <option value="$PROJECT_DIR$/src/ond170030/LP3/TLP3Driver.java" />
+        <option value="$PROJECT_DIR$/src/ond170030/LP3/MDS.java" />
       </list>
     </option>
   </component>
@@ -233,14 +204,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="ond170030" type="462c0819:PsiDirectoryNode" />
               <item name="LP3" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ImplementationAssignments" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ImplementationAssignments" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ond170030" type="462c0819:PsiDirectoryNode" />
-              <item name="LP3" type="462c0819:PsiDirectoryNode" />
-              <item name="lp3-inputs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ImplementationAssignments" type="b2602c69:ProjectViewProjectNode" />
@@ -385,9 +348,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1280" y="-400" width="1600" height="1200" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1970475" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1970475" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -399,7 +361,7 @@
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" />
       <window_info anchor="bottom" id="Version Control" order="6" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4987163" weight="0.3283186" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4987163" visible="true" weight="0.3283186" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5012837" side_tool="true" weight="0.3283186" />
       <window_info anchor="bottom" id="Messages" order="9" weight="0.26283187" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -408,7 +370,7 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info anchor="right" id="Maven Projects" order="5" />
-      <window_info active="true" anchor="right" x="31" y="292" width="1280" height="724" id="Run" order="6" sideWeight="0.49919224" visible="true" weight="0.309371" />
+      <window_info anchor="right" x="31" y="292" width="1280" height="724" id="Run" order="6" sideWeight="0.49919224" weight="0.309371" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -655,31 +617,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/MDS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="542">
-          <caret line="237" lean-forward="true" selection-start-line="237" selection-end-line="237" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ond170030/LP3/LP3Driver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="13" selection-start-column="13" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ond170030/LP3/MDS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2562">
-          <caret line="323" column="20" lean-forward="true" selection-start-line="323" selection-start-column="20" selection-end-line="323" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#9128#9129#0" expanded="true" />
-            <element signature="e#9208#9209#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -698,6 +641,48 @@
             <element signature="e#2698#2699#0" expanded="true" />
             <element signature="e#2729#2730#0" expanded="true" />
             <element signature="method#unzip#0;class#SinglyLinkedList#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/MDS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="24" column="19" selection-end-line="469" selection-end-column="1" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ond170030/LP3/TLP3Driver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-747">
+          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#4350#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#3713#3714#0" expanded="true" />
+            <element signature="e#3775#3776#0" expanded="true" />
+            <element signature="e#3806#3807#0" expanded="true" />
+            <element signature="e#3868#3869#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/MDS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3345">
+          <caret line="237" lean-forward="true" selection-start-line="237" selection-end-line="237" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ond170030/LP3/MDS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4881">
+          <caret line="396" column="24" selection-start-line="396" selection-start-column="24" selection-end-line="396" selection-end-column="24" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
