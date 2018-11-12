@@ -2,6 +2,7 @@ package ond170030.SP1;
 import java.util.Iterator;
 import java.util.Random;
 import java.util.NoSuchElementException;
+import java.util.Scanner;
 
 //Team Members : Arpita Agrawal and omkar Dixit
 public class SinglyLinkedList<T> implements Iterable<T> {
@@ -112,7 +113,7 @@ public class SinglyLinkedList<T> implements Iterable<T> {
 	}
 
     /**
-     * Remove First
+     * Remove First element of the Link
      */
     public void removeFirst(){
         if(this.head.next == null){
@@ -125,12 +126,26 @@ public class SinglyLinkedList<T> implements Iterable<T> {
     }
 
     /**
-     * Remove a particular node
+     * Remove a particular node and returns the first occurence of x in the list, if x is not found returns no such element exception
      * @param x
      * @return
      */
     public T remove(T x){
-        return null;
+        if(x == null){
+            return (T) new NoSuchElementException();
+        }else{
+            Entry<T> cursor = this.head;
+            while(cursor.next != null){
+                if(cursor.next.element.equals(x)){
+                    T ans = cursor.next.element;
+                    cursor.next = cursor.next.next;
+                    return ans;
+                }
+                cursor = cursor.next;
+            }
+
+        }
+        return (T) new NoSuchElementException();
     }
 
     public void printList() {
@@ -188,40 +203,36 @@ public class SinglyLinkedList<T> implements Iterable<T> {
         }
         Random random = new Random();
         SinglyLinkedList<Integer> lst = new SinglyLinkedList<>();
-        lst.removeFirst();
         for(int i=1; i<=n; i++) {
-//            lst.add(Integer.valueOf(i));
-            if(random.nextBoolean()){
-                lst.add(Integer.valueOf(i));
-            }else{
-                lst.addFirst(Integer.valueOf(i));
+            lst.add(Integer.valueOf(i));
+        }
+        lst.printList();
+        lst.remove(1);
+        lst.printList();
+        Iterator<Integer> it = lst.iterator();
+        Scanner in = new Scanner(System.in);
+        whileloop:
+        while(in.hasNext()) {
+            int com = in.nextInt();
+            switch(com) {
+            case 1:  // Move to next element and print it
+                if (it.hasNext()) {
+                    System.out.println(it.next());
+                } else {
+                    break whileloop;
+                }
+                break;
+            case 2:  // Remove element
+                it.remove();
+                lst.printList();
+                break;
+            default:  // Exit loop
+                break whileloop;
             }
         }
         lst.printList();
-//        Iterator<Integer> it = lst.iterator();
-//        Scanner in = new Scanner(System.in);
-//        whileloop:
-//        while(in.hasNext()) {
-//            int com = in.nextInt();
-//            switch(com) {
-//            case 1:  // Move to next element and print it
-//                if (it.hasNext()) {
-//                    System.out.println(it.next());
-//                } else {
-//                    break whileloop;
-//                }
-//                break;
-//            case 2:  // Remove element
-//                it.remove();
-//                lst.printList();
-//                break;
-//            default:  // Exit loop
-//                break whileloop;
-//            }
-//        }
-//        lst.printList();
-//        lst.unzip();
-//            lst.printList();
+        lst.unzip();
+            lst.printList();
     }
 }
 
