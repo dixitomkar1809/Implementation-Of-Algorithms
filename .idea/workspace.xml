@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9b41b743-eaad-46aa-bc87-bcfec84d3b5f" name="Default Changelist" comment="K">
-      <change beforePath="$PROJECT_DIR$/src/ond170030/SP1/SinglyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ond170030/SP1/SinglyLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ond170030/SP10/DFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ond170030/SP10/DFS.java" afterDir="false" />
-    </list>
+    <list default="true" id="9b41b743-eaad-46aa-bc87-bcfec84d3b5f" name="Default Changelist" comment="K" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,7 +13,7 @@
     <session id="1373685787">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="10" />
+          <entry key="project.closed" value="11" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="3" />
           <entry key="project.open.time.11" value="1" />
@@ -35,7 +32,7 @@
           <entry key="LP1" value="1" />
           <entry key="Readme" value="1" />
           <entry key="SP4" value="1" />
-          <entry key="java" value="78" />
+          <entry key="java" value="79" />
           <entry key="jpg" value="1" />
           <entry key="report" value="2" />
           <entry key="txt" value="16" />
@@ -44,7 +41,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Image" value="1" />
-          <entry key="JAVA" value="78" />
+          <entry key="JAVA" value="79" />
           <entry key="PLAIN_TEXT" value="19" />
           <entry key="Scratch" value="2" />
         </counts>
@@ -70,12 +67,21 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ond170030/SP1/SinglyLinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1617">
+            <state relative-caret-position="1455">
               <caret line="239" column="11" lean-forward="true" selection-start-line="239" selection-end-line="240" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#unzip#0;class#SinglyLinkedList#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ond170030/LP1/Num.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="96" column="22" selection-start-line="96" selection-start-column="22" selection-end-line="96" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -110,7 +116,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>remove</find>
       <find>table[location]</find>
       <find>priceHike</find>
       <find>80</find>
@@ -140,6 +145,7 @@
       <find>Item</find>
       <find>connected</find>
       <find>connectedComponents()</find>
+      <find>add</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -190,11 +196,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds">
     <option name="x" value="1280" />
-    <option name="y" value="-400" />
-    <option name="width" value="1600" />
-    <option name="height" value="1200" />
+    <option name="y" value="-378" />
+    <option name="width" value="1280" />
+    <option name="height" value="724" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -229,6 +235,13 @@
               <item name="ImplementationAssignments" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="ond170030" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ImplementationAssignments" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ImplementationAssignments" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ond170030" type="462c0819:PsiDirectoryNode" />
+              <item name="LP1" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ImplementationAssignments" type="b2602c69:ProjectViewProjectNode" />
@@ -386,9 +399,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1280" y="-400" width="1600" height="1200" extended-state="0" />
+    <frame x="1280" y="-378" width="1280" height="724" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1970475" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24798061" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -400,7 +413,7 @@
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" />
       <window_info anchor="bottom" id="Version Control" order="6" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4987163" weight="0.3283186" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4987163" weight="0.5082192" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5012837" side_tool="true" weight="0.3283186" />
       <window_info anchor="bottom" id="Messages" order="9" weight="0.26283187" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -409,7 +422,7 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info anchor="right" id="Maven Projects" order="5" />
-      <window_info active="true" anchor="right" x="31" y="292" width="1280" height="724" id="Run" order="6" sideWeight="0.49919224" visible="true" weight="0.309371" />
+      <window_info anchor="right" x="31" y="292" width="1280" height="724" id="Run" order="6" sideWeight="0.49919224" weight="0.38933763" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -465,13 +478,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ond170030/LP1/Num.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="527" column="25" lean-forward="true" selection-start-line="527" selection-start-column="25" selection-end-line="527" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -718,9 +724,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ond170030/LP1/Num.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="96" column="22" selection-start-line="96" selection-start-column="22" selection-end-line="96" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ond170030/SP1/SinglyLinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1617">
+        <state relative-caret-position="1455">
           <caret line="239" column="11" lean-forward="true" selection-start-line="239" selection-end-line="240" />
           <folding>
             <element signature="imports" expanded="true" />
