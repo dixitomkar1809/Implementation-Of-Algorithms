@@ -1,0 +1,22 @@
+Value of n 8000000
+Value of k 4000000
+PQ Time: 2898 msec.
+Memory: 150 MB / 309 MB.
+Select Time: 50 msec.
+Memory: 150 MB / 309 MB.
+
+
+Value of n 16000000
+Value of k 8000000
+PQ Time: 9887 msec.
+Memory: 294 MB / 604 MB.
+Select Time: 128 msec.
+Memory: 294 MB / 604 MB.
+
+
+Value of n 32000000
+Value of k 16000000
+PQ Time: 21948 msec.
+Memory: 613 MB / 821 MB.
+Select Time: 296 msec.
+Memory: 613 MB / 821 MB.
