@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b41b743-eaad-46aa-bc87-bcfec84d3b5f" name="Default Changelist" comment="K">
-      <change afterPath="$PROJECT_DIR$/src/ond170030/SP11/question" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ond170030/SP11/report" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ond170030/SP2/SP2Optional.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IDSA-Projects/ond170030/SP11/kLargestElements.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IDSA-Projects/ond170030/SP11/kLargestElements.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ond170030/SP11/kLargestElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ond170030/SP11/kLargestElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IDSA-Projects/ond170030/SP1/SinglyLinkedList$Entry.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IDSA-Projects/ond170030/SP1/SinglyLinkedList$Entry.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IDSA-Projects/ond170030/SP1/SinglyLinkedList$SLLIterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IDSA-Projects/ond170030/SP1/SinglyLinkedList$SLLIterator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IDSA-Projects/ond170030/SP1/SinglyLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IDSA-Projects/ond170030/SP1/SinglyLinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IDSA-Projects/ond170030/SP11/report" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IDSA-Projects/ond170030/SP11/report" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IDSA-Projects/ond170030/SP2/BoundedQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IDSA-Projects/ond170030/SP2/BoundedQueue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ond170030/SP1/SinglyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ond170030/SP1/SinglyLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ond170030/SP2/BoundedQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ond170030/SP2/BoundedQueue.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -70,61 +74,56 @@
     <session id="-919916533">
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="1" />
+          <entry key="java" value="7" />
           <entry key="question" value="1" />
           <entry key="report" value="1" />
+          <entry key="txt" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="1" />
-          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="JAVA" value="7" />
+          <entry key="PLAIN_TEXT" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="426" />
+          <entry key="java" value="2521" />
           <entry key="report" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="426" />
+          <entry key="JAVA" value="2521" />
           <entry key="PLAIN_TEXT" value="8" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ond170030/SP11/kLargestElements.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="107" column="18" selection-start-line="107" selection-start-column="18" selection-end-line="107" selection-end-column="18" />
-              <folding>
-                <element signature="e#347#348#0" expanded="true" />
-                <element signature="e#391#392#0" expanded="true" />
-                <element signature="e#1657#1666#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ond170030/SP11/report">
+        <entry file="file://$PROJECT_DIR$/src/ond170030/SP2/SP2Optional.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="19" lean-forward="true" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+            <state relative-caret-position="429">
+              <caret line="148" column="22" lean-forward="true" selection-start-line="148" selection-start-column="22" selection-end-line="148" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ond170030/SP11/question">
+        <entry file="file://$PROJECT_DIR$/src/ond170030/SP2/sp2.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="221">
+              <caret line="46" column="4" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -140,7 +139,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>priceHike</find>
       <find>80</find>
       <find>left</find>
       <find>mergesort2</find>
@@ -170,6 +168,7 @@
       <find>connectedComponents()</find>
       <find>add</find>
       <find>random</find>
+      <find>intersect</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -215,7 +214,6 @@
         <option value="$PROJECT_DIR$/src/ond170030/LP3/TLP3Driver.java" />
         <option value="$PROJECT_DIR$/src/ond170030/LP3/MDS.java" />
         <option value="$PROJECT_DIR$/src/ond170030/SP10/DFS.java" />
-        <option value="$PROJECT_DIR$/src/ond170030/SP1/SinglyLinkedList.java" />
         <option value="$PROJECT_DIR$/src/ond170030/SP11/KLargestElement.java" />
         <option value="$PROJECT_DIR$/src/ond170030/SP9/SP9.java" />
         <option value="$PROJECT_DIR$/src/ond170030/SP11/Timer.java" />
@@ -223,12 +221,16 @@
         <option value="$PROJECT_DIR$/src/ond170030/SP11/question" />
         <option value="$PROJECT_DIR$/src/ond170030/SP11/kLargestElements.java" />
         <option value="$PROJECT_DIR$/src/ond170030/SP11/report" />
+        <option value="$PROJECT_DIR$/src/ond170030/SP2/BoundedQueue.java" />
+        <option value="$PROJECT_DIR$/src/ond170030/SP1/SinglyLinkedList.java" />
+        <option value="$PROJECT_DIR$/src/ond170030/SP2/SP2Optional.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1280" />
-    <option name="height" value="800" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="width" value="977" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -238,6 +240,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -267,22 +270,22 @@
               <item name="ImplementationAssignments" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="ond170030" type="462c0819:PsiDirectoryNode" />
-              <item name="SP11" type="462c0819:PsiDirectoryNode" />
+              <item name="SP2" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542523704312" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543102714986" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/Git/HousingBoard" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.customizations" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -311,13 +314,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.kLargestElements">
-    <configuration name="BigDecimalTrial" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ond170030.LP3.BigDecimalTrial" />
+  <component name="RunManager" selected="Application.SP2Optional">
+    <configuration name="BoundedQueue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ond170030.SP2.BoundedQueue" />
       <module name="IDSA-Projects" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ond170030.LP3.*" />
+          <option name="PATTERN" value="ond170030.SP2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -339,12 +342,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SP9 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ond170030.SP8.SP9" />
+    <configuration name="SP2Optional" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ond170030.SP2.SP2Optional" />
       <module name="IDSA-Projects" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ond170030.SP8.*" />
+          <option name="PATTERN" value="ond170030.SP2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -379,19 +382,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.BigDecimalTrial" />
-      <item itemvalue="Application.SP9 (1)" />
       <item itemvalue="Application.LP3Driver" />
       <item itemvalue="Application.SinglyLinkedList" />
       <item itemvalue="Application.kLargestElements" />
+      <item itemvalue="Application.BoundedQueue" />
+      <item itemvalue="Application.SP2Optional" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SP2Optional" />
+        <item itemvalue="Application.BoundedQueue" />
         <item itemvalue="Application.kLargestElements" />
         <item itemvalue="Application.SinglyLinkedList" />
         <item itemvalue="Application.LP3Driver" />
-        <item itemvalue="Application.BigDecimalTrial" />
-        <item itemvalue="Application.SP9 (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -409,14 +412,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1616" height="1186" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.15745501" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.15771812" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info id="Image Layers" order="5" />
+      <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32876712" />
       <window_info anchor="bottom" id="Debug" order="2" weight="0.4" />
@@ -424,43 +429,24 @@
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" />
       <window_info anchor="bottom" id="Version Control" order="6" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4987163" weight="0.5082192" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4987163" weight="0.50695324" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5012837" side_tool="true" weight="0.3283186" />
-      <window_info anchor="bottom" id="Messages" order="9" weight="0.26283187" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.26153848" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info anchor="right" id="Maven Projects" order="5" />
-      <window_info active="true" anchor="right" x="31" y="292" width="1280" height="724" id="Run" order="6" sideWeight="0.49919224" visible="true" weight="0.2718509" />
+      <window_info active="true" anchor="right" x="31" y="292" width="1280" height="724" id="Run" order="6" sideWeight="0.49919224" visible="true" weight="0.27181208" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ond170030/SP3/driver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ond170030/SP3/Readme">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/misc/DoublyLinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-127">
-          <caret line="60" column="30" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ond170030/SP4/BinarySearchTree.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1080">
@@ -533,9 +519,6 @@
           <caret line="30" column="42" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ond170030/SP2/Readme.txt">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ond170030/SP1/README.txt">
       <provider selected="true" editor-type-id="text-editor" />
@@ -645,9 +628,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="13" selection-start-column="13" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -656,14 +636,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-747">
           <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#4350#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="e#3713#3714#0" expanded="true" />
-            <element signature="e#3775#3776#0" expanded="true" />
-            <element signature="e#3806#3807#0" expanded="true" />
-            <element signature="e#3868#3869#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -672,20 +644,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4881">
           <caret line="396" column="24" selection-start-line="396" selection-start-column="24" selection-end-line="396" selection-end-column="24" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ond170030/SP1/SinglyLinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="239" column="11" selection-start-line="239" selection-end-line="240" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#unzip#0;class#SinglyLinkedList#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -700,9 +658,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1740">
           <caret line="133" selection-start-line="133" selection-end-line="133" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -723,21 +678,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ond170030/SP11/question">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ond170030/SP11/kLargestElements.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="107" column="18" selection-start-line="107" selection-start-column="18" selection-end-line="107" selection-end-column="18" />
+        <state relative-caret-position="272">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
           <folding>
-            <element signature="e#347#348#0" expanded="true" />
-            <element signature="e#391#392#0" expanded="true" />
-            <element signature="e#1657#1666#0" expanded="true" />
+            <element signature="e#412#413#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -745,7 +691,54 @@
     <entry file="file://$PROJECT_DIR$/src/ond170030/SP11/report">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="17" column="19" lean-forward="true" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ond170030/SP11/question">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ond170030/SP1/SinglyLinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-775">
+          <caret line="145" column="5" selection-start-line="145" selection-start-column="5" selection-end-line="145" selection-end-column="5" />
+          <folding>
+            <element signature="class#SLLIterator#0;class#SinglyLinkedList#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ond170030/SP2/BoundedQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="127" column="18" lean-forward="true" selection-start-line="127" selection-start-column="18" selection-end-line="127" selection-end-column="18" />
+          <folding>
+            <element signature="e#1685#1686#0" expanded="true" />
+            <element signature="e#1709#1710#0" expanded="true" />
+            <element signature="e#1806#1807#0" expanded="true" />
+            <element signature="e#1836#1837#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ond170030/SP2/Readme.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ond170030/SP2/sp2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="46" column="4" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ond170030/SP2/SP2Optional.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="148" column="22" lean-forward="true" selection-start-line="148" selection-start-column="22" selection-end-line="148" selection-end-column="22" />
         </state>
       </provider>
     </entry>

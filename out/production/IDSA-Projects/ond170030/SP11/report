@@ -20,3 +20,11 @@ PQ Time: 21948 msec.
 Memory: 613 MB / 821 MB.
 Select Time: 296 msec.
 Memory: 613 MB / 821 MB.
+
+
+Value of n 64000000
+Value of k 32000000
+PQ Time: 51981 msec.
+Memory: 1222 MB / 1657 MB.
+Select Time: 468 msec.
+Memory: 1222 MB / 1657 MB.

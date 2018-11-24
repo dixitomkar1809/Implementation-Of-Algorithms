@@ -1,8 +1,5 @@
 package ond170030.SP1;
-import java.util.Iterator;
-import java.util.Random;
-import java.util.NoSuchElementException;
-import java.util.Scanner;
+import java.util.*;
 
 //Team Members : Arpita Agrawal and omkar Dixit
 public class SinglyLinkedList<T> implements Iterable<T> {
@@ -147,6 +144,7 @@ public class SinglyLinkedList<T> implements Iterable<T> {
         }
         return (T) new NoSuchElementException();
     }
+
 
     public void printList() {
 	    System.out.print(this.size + ": ");

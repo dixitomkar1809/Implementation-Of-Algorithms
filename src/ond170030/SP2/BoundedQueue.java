@@ -4,15 +4,15 @@
  */
 
 package ond170030.SP2;
-
-/* Bounded Queue
+/**
+ * Bounded Queue
  * items is array of queue items
  * count keeps the number of items in the queue
  * tail is the last element
  * head is the first element
  * maxSize is the total number of elements in the queue
+ * @param <T>
  */
-
 public class BoundedQueue<T>{
 	Object[] items;
 	int count;
@@ -28,10 +28,11 @@ public class BoundedQueue<T>{
 		this.maxSize = size;
 	}
 
-	//	adds a new element x at the rear of the queue
-	//returns false if the element was not added because the queue is full
+    /**
+     * adds a new element x at the rear of the queue
+     * returns false if the element was not added because the queue is full
+     * */
 	public boolean offer(T x) {
-//		System.out.println("Enqueueing "+ x);
 		if(this.count == this.maxSize) {
 			System.out.println("Queue Full! Can't Add more!");
 			return false;
@@ -45,9 +46,11 @@ public class BoundedQueue<T>{
 		System.out.println("Enqueued "+ x);
 		return true;
 	}
-	
-	//remove and return the element at the front of the queue
-	//return null if the queue is empty
+
+    /**
+     * remove and return the element at the front of the queue
+     * return null if the queue is empty
+     */
 	public T poll() {
 		if(this.isEmpty()) {
 			return null;
@@ -58,26 +61,35 @@ public class BoundedQueue<T>{
 		this.count--;
 		return temp;
 	}
-	
-	//return front element, without removing it (null if queue is empty)
+
+    /**
+     * return front element, without removing it (null if queue is empty)
+     */
 	public T peek() {
 		if(this.isEmpty()) {
 			return null;
 		}
 		return (T) this.items[head];
 	}
-	
-	//return the number of elements in the queue
+
+    /**
+     * return the number of elements in the queue
+     */
 	public int size() {
 		return this.count;
 	}
-	
-	//check if the queue is empty
+
+    /**
+     *  check if the queue is empty
+     * @return
+     */
 	public boolean isEmpty() {
 		return(this.count == 0);
 	}
-	
-	//clear the queue
+
+    /**
+     * clear the queue
+     */
 	public void clear() {
 		for(int i  = head; i <= tail; i++) {
 			this.items[i] = Integer.MIN_VALUE;
@@ -86,8 +98,11 @@ public class BoundedQueue<T>{
 		this.count = 0;
 		return;
 	}
-	
-	//fill user supplied array with the elements of the queue, in queue order
+
+    /**
+     * fill user supplied array with the elements of the queue, in queue order
+     * @param a
+     */
 	public void toArray(T[] a) {
 		if(a.length < this.count) {
 			System.out.println("Array Provided is smaller than the No. of Queue Elemenets !");
@@ -126,5 +141,4 @@ public class BoundedQueue<T>{
 			System.out.println(myArray[i]);
 		}
 	}
-	
 }
