@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b41b743-eaad-46aa-bc87-bcfec84d3b5f" name="Default Changelist" comment="K">
-      <change afterPath="$PROJECT_DIR$/src/ond170030/SP2/SP2Optional.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IDSA-Projects/ond170030/SP1/SinglyLinkedList$Entry.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IDSA-Projects/ond170030/SP1/SinglyLinkedList$Entry.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IDSA-Projects/ond170030/SP1/SinglyLinkedList$SLLIterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IDSA-Projects/ond170030/SP1/SinglyLinkedList$SLLIterator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IDSA-Projects/ond170030/SP1/SinglyLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IDSA-Projects/ond170030/SP1/SinglyLinkedList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IDSA-Projects/ond170030/SP11/report" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IDSA-Projects/ond170030/SP11/report" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IDSA-Projects/ond170030/SP2/BoundedQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IDSA-Projects/ond170030/SP2/BoundedQueue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ond170030/SP1/SinglyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ond170030/SP1/SinglyLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ond170030/SP2/BoundedQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ond170030/SP2/BoundedQueue.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -113,7 +105,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ond170030/SP2/SP2Optional.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
+            <state relative-caret-position="786">
               <caret line="148" column="22" lean-forward="true" selection-start-line="148" selection-start-column="22" selection-end-line="148" selection-end-column="22" />
             </state>
           </provider>
@@ -279,7 +271,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543102714986" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543103312771" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT" />
     <property name="last_opened_file_path" value="D:/Git/HousingBoard" />
     <property name="project.structure.last.edited" value="Project" />
@@ -413,9 +405,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.15771812" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15771812" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -429,7 +420,7 @@
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" />
       <window_info anchor="bottom" id="Version Control" order="6" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4987163" weight="0.50695324" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.4987163" visible="true" weight="0.5062937" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5012837" side_tool="true" weight="0.3283186" />
       <window_info anchor="bottom" id="Messages" order="9" weight="0.26153848" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -438,7 +429,7 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info anchor="right" id="Maven Projects" order="5" />
-      <window_info active="true" anchor="right" x="31" y="292" width="1280" height="724" id="Run" order="6" sideWeight="0.49919224" visible="true" weight="0.27181208" />
+      <window_info anchor="right" x="31" y="292" width="1280" height="724" id="Run" order="6" sideWeight="0.49919224" visible="true" weight="0.27181208" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
@@ -737,7 +728,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ond170030/SP2/SP2Optional.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
+        <state relative-caret-position="786">
           <caret line="148" column="22" lean-forward="true" selection-start-line="148" selection-start-column="22" selection-end-line="148" selection-end-column="22" />
         </state>
       </provider>
