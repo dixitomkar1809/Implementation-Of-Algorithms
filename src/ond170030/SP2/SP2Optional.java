@@ -131,12 +131,18 @@ public class SP2Optional {
         List<Integer> l1 = new ArrayList<>();
         List<Integer> l2 = new ArrayList<>();
         List<Integer> result = new ArrayList<>();
-        for (int i = 0; i < 50 ; i++) {
-            l1.add(i);
-            l2.add(i+1);
-        }
-        System.out.println(l1.size()+" "+l2.size());
-        System.out.println("1. Intersect \n 2. Union \n 3. Difference \n");
+//        for (int i = 0; i < 50 ; i++) {
+//            l1.add(i);
+//            l2.add(i+1);
+//        }
+        l1.add(1);
+        l1.add(4);
+        l1.add(5);
+        l2.add(1);
+        l2.add(3);
+        l2.add(4);
+//        System.out.println(l1.size()+" "+l2.size());
+        System.out.println("1. Intersect \n2. Union \n3. Difference \n");
         Scanner reader = new Scanner(System.in);
         int choice = reader.nextInt();
         reader.close();

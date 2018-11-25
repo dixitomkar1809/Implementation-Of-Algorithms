@@ -28,7 +28,7 @@ public class kLargestElements {
      */
     public static int select(int[] arr, int p, int n, int k)
     {
-        //insertion sort
+        //insertion sort if less than threshold
         int q = randomPartition(arr,p,p+n-1);
         int left = q-p;
         int right = n-left-1;
