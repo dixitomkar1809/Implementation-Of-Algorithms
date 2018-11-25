@@ -158,7 +158,8 @@ public class BFSOO extends Graph.GraphAlgorithm<BFSOO.BFSVertex> {
     }
     
     public static void main(String[] args) throws Exception {
-	String string = "8 7   1 2 1   1 3 1   2 4 1   2 5 1   4 8 1   3 6 1	  3 7 1 1";
+//	String string = "8 7   1 2 1   1 3 1   2 4 1   2 5 1   4 8 1   3 6 1	  3 7 1 1";
+		String string = "10 9   1 2 2   1 3 3   2 4 5   2 5 4   3 6 1   3 7 1   4 8 1   7 9 1   7 10 1 1";
 	Scanner in;
 	// If there is a command line argument, use it as file from which
 	// input is read, otherwise use input from string.
