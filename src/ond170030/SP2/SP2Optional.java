@@ -71,7 +71,7 @@ public class SP2Optional {
      * @param outList
      * @param <T>
      */
-    public static<T extends Comparable<? super T>> void union(List<T> l1, List<T> l2, List<T> outList) {
+    public static<T extends Comparable<? super T>> void   union(List<T> l1, List<T> l2, List<T> outList) {
         if(l1.isEmpty() || l2.isEmpty()){
             return;
         }
