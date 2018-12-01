@@ -2,34 +2,6 @@ package ond170030.SP2;
 
 import java.util.*;
 
-/**
- * 2. Given two linked lists implementing sorted sets, write functions for
- *    union, intersection, and set difference of the sets.
- *
- *     public static<T extends Comparable<? super T>>
- *         void intersect(List<T> l1, List<T> l2, List<T> outList) {
- * 	   // Return elements common to l1 and l2, in sorted order.
- * 	   // outList is an empty list created by the calling
- *            // program and passed as a parameter.
- * 	   // Function should be efficient whether the List is
- * 	   // implemented using ArrayList or LinkedList.
- * 	   // Do not use HashSet/Map or TreeSet/Map or other complex
- *            // data structures.
- *        }
- *
- *     public static<T extends Comparable<? super T>>
- *         void union(List<T> l1, List<T> l2, List<T> outList) {
- * 	   // Return the union of l1 and l2, in sorted order.
- * 	   // Output is a set, so it should have no duplicates.
- *    }
- *
- *     public static<T extends Comparable<? super T>>
- *         void difference(List<T> l1, List<T> l2, List<T> outList) {
- * 	   // Return l1 - l2 (i.e, items in l1 that are not in l2), in sorted order.
- * 	   // Output is a set, so it should have no duplicates.
- *    }
- */
-
 public class SP2Optional {
 
     /**
