@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b41b743-eaad-46aa-bc87-bcfec84d3b5f" name="Default Changelist" comment="K">
-      <change afterPath="$PROJECT_DIR$/src/ond170030/SP4/SP4OPT.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ond170030/SP2/SP2Optional.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ond170030/SP2/SP2Optional.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ond170030/SP8/DFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ond170030/SP8/DFS.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -96,7 +93,7 @@
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="1" />
@@ -149,7 +146,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ond170030/SP8/DFS.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
+            <state relative-caret-position="238">
               <caret line="68" column="10" selection-start-line="68" selection-start-column="10" selection-end-line="68" selection-end-column="10" />
             </state>
           </provider>
@@ -167,8 +164,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ond170030/SP10/DFS.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1492">
-              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+            <state relative-caret-position="1053">
+              <caret line="157" column="52" lean-forward="true" selection-start-line="157" selection-start-column="52" selection-end-line="157" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -304,91 +301,6 @@
               <item name="ImplementationAssignments" type="b2602c69:ProjectViewProjectNode" />
               <item name="ImplementationAssignments" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="ImplementationAssignments" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ImplementationAssignments" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ImplementationAssignments" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ImplementationAssignments" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ImplementationAssignments" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ImplementationAssignments" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="misc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ImplementationAssignments" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ImplementationAssignments" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ond170030" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ImplementationAssignments" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ImplementationAssignments" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ond170030" type="462c0819:PsiDirectoryNode" />
-              <item name="SP2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ImplementationAssignments" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ImplementationAssignments" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ond170030" type="462c0819:PsiDirectoryNode" />
-              <item name="SP3" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ImplementationAssignments" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ImplementationAssignments" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ond170030" type="462c0819:PsiDirectoryNode" />
-              <item name="SP4" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ImplementationAssignments" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ImplementationAssignments" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ond170030" type="462c0819:PsiDirectoryNode" />
-              <item name="SP7" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ImplementationAssignments" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ImplementationAssignments" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ond170030" type="462c0819:PsiDirectoryNode" />
-              <item name="SP8" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ImplementationAssignments" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ImplementationAssignments" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ond170030" type="462c0819:PsiDirectoryNode" />
-              <item name="SP9" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ImplementationAssignments" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ImplementationAssignments" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ond170030" type="462c0819:PsiDirectoryNode" />
-              <item name="SP10" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ImplementationAssignments" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ImplementationAssignments" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ond170030" type="462c0819:PsiDirectoryNode" />
-              <item name="SP11" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ImplementationAssignments" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ImplementationAssignments" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ond170030" type="462c0819:PsiDirectoryNode" />
-              <item name="SP12" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -397,7 +309,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543387383129" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543511481499" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT" />
     <property name="last_opened_file_path" value="D:/Git/SP12" />
     <property name="project.structure.last.edited" value="Project" />
@@ -530,9 +442,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16644295" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16644295" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -546,7 +457,7 @@
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" />
       <window_info anchor="bottom" id="Version Control" order="6" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4987163" weight="0.5062937" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.4987163" visible="true" weight="0.5062937" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5012837" side_tool="true" weight="0.3283186" />
       <window_info anchor="bottom" id="Messages" order="9" weight="0.26153848" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -861,15 +772,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ond170030/SP8/DFS.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
+        <state relative-caret-position="238">
           <caret line="68" column="10" selection-start-line="68" selection-start-column="10" selection-end-line="68" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ond170030/SP10/DFS.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1492">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+        <state relative-caret-position="1053">
+          <caret line="157" column="52" lean-forward="true" selection-start-line="157" selection-start-column="52" selection-end-line="157" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

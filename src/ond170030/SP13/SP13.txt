@@ -1,0 +1,21 @@
+Implementation of data structures and algorithms
+Fall 2018
+Short Project 13: String algorithms
+Fri, Nov 30, 2018
+
+Version 1.0: Initial description (Fri, Nov 30).
+
+There is no team task.  SP13 is optional (individual).
+Solve 0 or more problems.
+
+Due: 11:59 PM, Sun, Dec 16.
+
+1. Implement Tries.  Starter code is provided.
+   You may modify the methods and parameters (even for public methods), as needed.
+
+2. Implement KMP algorithm.  Use it to solve the following problem:
+   Given a string s, find the shortest string x such that x + s is a palindrome.
+
+3. Implement Boyer-Moore algorithm.
+
+4. Implement automata matcher.
