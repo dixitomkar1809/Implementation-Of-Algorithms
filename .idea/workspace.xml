@@ -1,12 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9b41b743-eaad-46aa-bc87-bcfec84d3b5f" name="Default Changelist" comment="K">
-<<<<<<< HEAD
+    <list default="true" id="138e31d8-a7f0-4edc-ad66-be3c89dc1ff1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-=======
-      <change beforePath="$PROJECT_DIR$/src/ond170030/SP2/SP2Optional.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ond170030/SP2/SP2Optional.java" afterDir="false" />
->>>>>>> 6fa306e2d28c02e9e2a2b9f16eeead8ff3bcc5a9
+      <change beforePath="$PROJECT_DIR$/out/production/IDSA-Projects/ond170030/LP2/scratch.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IDSA-Projects/ond170030/SP1/assgn.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IDSA-Projects/ond170030/SP3/SP_3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ond170030/Java Examples/BFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ond170030/JavaExamples/BFS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ond170030/Java Examples/BFSOO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ond170030/JavaExamples/BFSOO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ond170030/Java Examples/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ond170030/JavaExamples/Graph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ond170030/Java Examples/SinglyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ond170030/JavaExamples/SinglyLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ond170030/Java Examples/SinglyLinkedList2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ond170030/JavaExamples/SinglyLinkedList2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ond170030/LP4/Enumerate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ond170030/LP4/Enumerate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ond170030/LP4/EnumerateToplogical.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ond170030/LP4/EnumerateTopological.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ond170030/LP4/LP4Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ond170030/LP4/LP4Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ond170030/LP4/PERT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ond170030/LP4/PERT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ond170030/SP11/Enumerate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ond170030/SP11/Enumerate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ond170030/SP11/kLargestElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ond170030/SP11/kLargestElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ond170030/SP5/AVLTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ond170030/SP5/AVLTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ond170030/SP5/RedBlackTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ond170030/SP5/RedBlackTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ond170030/SP5/SplayTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ond170030/SP5/SplayTree.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,117 +30,44 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FUSProjectUsageTrigger">
-    <session id="1373685787">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="11" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.10" value="4" />
-          <entry key="project.open.time.11" value="1" />
-          <entry key="project.open.time.12" value="1" />
-          <entry key="project.open.time.13" value="1" />
-          <entry key="project.open.time.2" value="1" />
-          <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.6" value="1" />
-          <entry key="project.open.time.7" value="1" />
-          <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="14" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="LP1" value="1" />
-          <entry key="Readme" value="1" />
-          <entry key="SP4" value="1" />
-          <entry key="java" value="84" />
-          <entry key="jpg" value="1" />
-          <entry key="report" value="2" />
-          <entry key="txt" value="16" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="Image" value="1" />
-          <entry key="JAVA" value="84" />
-          <entry key="PLAIN_TEXT" value="19" />
-          <entry key="Scratch" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="dummy" value="13" />
-          <entry key="java" value="20511" />
-          <entry key="report" value="153" />
-          <entry key="txt" value="161" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="20511" />
-          <entry key="PLAIN_TEXT" value="327" />
-        </counts>
-      </usages-collector>
-    </session>
     <session id="-919916533">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="SP_3" value="1" />
-          <entry key="java" value="25" />
-          <entry key="question" value="1" />
-          <entry key="report" value="2" />
-          <entry key="txt" value="5" />
+          <entry key="java" value="16" />
+          <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="25" />
-          <entry key="PLAIN_TEXT" value="9" />
+          <entry key="JAVA" value="16" />
+          <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="4084" />
-          <entry key="report" value="8" />
+          <entry key="java" value="192" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4084" />
-          <entry key="PLAIN_TEXT" value="8" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="3" />
-          <entry key="project.open.time.10" value="1" />
-          <entry key="project.open.time.12" value="1" />
-          <entry key="project.open.time.13" value="1" />
-          <entry key="project.opened" value="3" />
-        </counts>
-      </usages-collector>
-    </session>
-    <session id="2045832793">
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="java" value="22" />
-          <entry key="report" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="JAVA" value="22" />
-          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="JAVA" value="192" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ond170030/SP12/BFSOO.java">
+        <entry file="file://$PROJECT_DIR$/src/ond170030/LP4/EnumerateTopological.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="121" column="13" lean-forward="true" selection-start-line="121" selection-start-column="13" selection-end-line="121" selection-end-column="13" />
+            <state relative-caret-position="255">
+              <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -135,153 +76,88 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ond170030/SP1/DoublyLinkedList.java">
+        <entry file="file://$PROJECT_DIR$/src/ond170030/LP4/LP4Driver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            <state relative-caret-position="340">
+              <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ond170030/SP1/SinglyLinkedList.java">
+        <entry file="file://$PROJECT_DIR$/src/ond170030/SP5/AVLTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1111">
-              <caret line="145" column="5" selection-start-line="145" selection-start-column="5" selection-end-line="145" selection-end-column="5" />
-              <folding>
-                <element signature="class#SLLIterator#0;class#SinglyLinkedList#0" />
-              </folding>
+            <state relative-caret-position="34">
+              <caret line="3" column="2" lean-forward="true" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ond170030/SP2/BoundedQueue.java">
+        <entry file="file://$PROJECT_DIR$/src/ond170030/SP5/RedBlackTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="461">
-              <caret line="127" column="18" lean-forward="true" selection-start-line="127" selection-start-column="18" selection-end-line="127" selection-end-column="18" />
+            <state relative-caret-position="153">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ond170030/SP2/SP2Optional.java">
+        <entry file="file://$PROJECT_DIR$/src/ond170030/SP5/SplayTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1062">
-              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+            <state relative-caret-position="119">
+              <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ond170030/SP3/BinaryHeap.java">
+        <entry file="file://$PROJECT_DIR$/src/ond170030/SP11/Enumerate.java">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="238">
-              <caret line="68" column="10" selection-start-line="68" selection-start-column="10" selection-end-line="68" selection-end-column="10" />
-=======
-            <state relative-caret-position="-298">
-              <caret line="97" column="23" lean-forward="true" selection-start-line="97" selection-start-column="23" selection-end-line="97" selection-end-column="23" />
->>>>>>> 6fa306e2d28c02e9e2a2b9f16eeead8ff3bcc5a9
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ond170030/SP4/BinarySearchTree.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-813">
-              <caret line="57" column="9" lean-forward="true" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ond170030/SP11/kLargestElements.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="87" column="31" lean-forward="true" selection-start-line="87" selection-start-column="31" selection-end-line="87" selection-end-column="31" />
-              <folding>
-                <element signature="e#368#369#0" expanded="true" />
-                <element signature="e#412#413#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ond170030/SP8/DFS.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="633">
-              <caret line="75" column="8" lean-forward="true" selection-start-line="75" selection-start-column="8" selection-end-line="75" selection-end-column="8" />
+            <state relative-caret-position="323">
+              <caret line="21" column="19" lean-forward="true" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ond170030/SP9/SP9.java">
+        <entry file="file://$PROJECT_DIR$/src/ond170030/SP11/kLargestElements.java">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="1053">
-              <caret line="157" column="52" lean-forward="true" selection-start-line="157" selection-start-column="52" selection-end-line="157" selection-end-column="52" />
-=======
-            <state relative-caret-position="-681">
-              <caret line="53" column="6" selection-start-line="53" selection-start-column="6" selection-end-line="53" selection-end-column="6" />
->>>>>>> 6fa306e2d28c02e9e2a2b9f16eeead8ff3bcc5a9
-              <folding>
-                <element signature="e#2727#2728#0" expanded="true" />
-                <element signature="e#2778#2779#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="204">
+              <caret line="108" column="26" selection-start-line="108" selection-start-column="23" selection-end-line="108" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ond170030/SP5/BinarySearchTree.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ond170030/LP4/PERT.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ond170030/LP4/Enumerate.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="FxmlFile" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>left</find>
-      <find>mergesort2</find>
-      <find>subsetIdMap</find>
-      <find>strong</find>
-      <find>par</find>
-      <find>get</find>
-      <find>findmin</find>
-      <find>findmin 3</find>
-      <find>priceH</find>
-      <find>net</find>
-      <find>4936</find>
-      <find>49</find>
-      <find>Money</find>
-      <find>pricehik</find>
-      <find>tom</find>
-      <find>pricehike</find>
-      <find>find</find>
-      <find>getprice</find>
-      <find>toString</find>
-      <find>money</find>
-      <find>findpricera</find>
-      <find>compare</find>
-      <find>compar</find>
-      <find>Item</find>
-      <find>connected</find>
-      <find>connectedComponents()</find>
-      <find>add</find>
-      <find>random</find>
-      <find>intersect</find>
-      <find>system.out.println</find>
+      <find>rbk</find>
     </findStrings>
-    <replaceStrings>
-      <replace />
-    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -289,206 +165,123 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/ond170030/postfixEval.java" />
-        <option value="$PROJECT_DIR$/src/ond170030/SP3/driver.java" />
-        <option value="$PROJECT_DIR$/src/misc/DoublyLinkedList.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.txt" />
-        <option value="$PROJECT_DIR$/src/ond170030/SP4/BinarySearchTree.java" />
-        <option value="$PROJECT_DIR$/src/ond170030/LP2/Timer.java" />
-        <option value="$PROJECT_DIR$/src/ond170030/LP1/Num.java" />
-        <option value="$PROJECT_DIR$/src/ond170030/LP1/TestLP1.java" />
-        <option value="$PROJECT_DIR$/src/ond170030/LP2/SkipListDriver.java" />
-        <option value="$PROJECT_DIR$/src/ond170030/SP1/DoublyLinkedList.java" />
-        <option value="$PROJECT_DIR$/src/ond170030/SP1/DoublyLinkedListIterator.java" />
-        <option value="$PROJECT_DIR$/src/ond170030/LP2/SLIterator.java" />
-        <option value="$PROJECT_DIR$/src/ond170030/LP2/SkipList.java" />
-        <option value="$PROJECT_DIR$/src/ond170030/SP7/doublehashing.java" />
-        <option value="$PROJECT_DIR$/src/ond170030/SP7/scratch.txt" />
-        <option value="$PROJECT_DIR$/src/ond170030/SP7/HashInterface.java" />
-        <option value="$PROJECT_DIR$/src/ond170030/SP7/readme.txt" />
-        <option value="$PROJECT_DIR$/src/ond170030/SP7/HashInteger.java" />
-        <option value="$PROJECT_DIR$/src/ond170030/SP7/DoubleHashing.java" />
-        <option value="$USER_HOME$/Desktop/ond170030/DoubleHashing.java" />
-        <option value="$PROJECT_DIR$/src/ond170030/LP3/BigDecimal.java" />
-        <option value="$PROJECT_DIR$/src/ond170030/LP3/BigDecimalTrial.java" />
-        <option value="$PROJECT_DIR$/src/ond170030/SP9/report" />
-        <option value="$PROJECT_DIR$/src/ond170030/SP8/SP9.java" />
-        <option value="$USER_HOME$/Desktop/vxd180004/SP9.java" />
-        <option value="$PROJECT_DIR$/src/ond170030/SP10/Graph.java" />
-        <option value="$PROJECT_DIR$/src/ond170030/LP3/lp3-inputs/404.txt" />
-        <option value="$PROJECT_DIR$/src/ond170030/LP3/sampleInput.txt" />
-        <option value="$PROJECT_DIR$/src/misc/SinglyLinkedList.java" />
-        <option value="$PROJECT_DIR$/src/ond170030/LP3/LP3Driver.java" />
-        <option value="$PROJECT_DIR$/src/ond170030/LP3/TLP3Driver.java" />
-        <option value="$PROJECT_DIR$/src/ond170030/LP3/MDS.java" />
-        <option value="$PROJECT_DIR$/src/ond170030/SP10/DFS.java" />
-        <option value="$PROJECT_DIR$/src/ond170030/SP11/KLargestElement.java" />
-        <option value="$PROJECT_DIR$/src/ond170030/SP9/SP9.java" />
-        <option value="$PROJECT_DIR$/src/ond170030/SP11/Timer.java" />
-        <option value="$PROJECT_DIR$/src/ond170030/SP11/Shuffle.java" />
-        <option value="$PROJECT_DIR$/src/ond170030/SP11/question" />
-        <option value="$PROJECT_DIR$/src/ond170030/SP11/report" />
-        <option value="$PROJECT_DIR$/src/ond170030/SP2/BoundedQueue.java" />
-        <option value="$PROJECT_DIR$/src/ond170030/SP1/SinglyLinkedList.java" />
-        <option value="$PROJECT_DIR$/src/misc/BinaryHeap.java" />
+        <option value="$PROJECT_DIR$/src/ond170030/LP5/Graph.java" />
+        <option value="$PROJECT_DIR$/src/ond170030/LP5/MST.java" />
+        <option value="$PROJECT_DIR$/src/ond170030/LP5/BinaryHeap.java" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/src/ond170030/JavaExamples/SinglyLinkedList2.java" />
+        <option value="$PROJECT_DIR$/src/ond170030/LP4/EnumerateToplogicalo.java" />
+        <option value="$PROJECT_DIR$/src/ond170030/LP4/Graph.java" />
+        <option value="$PROJECT_DIR$/src/ond170030/LP4/Enumerate.java" />
+        <option value="$PROJECT_DIR$/src/ond170030/LP4/PERT.java" />
+        <option value="$PROJECT_DIR$/src/ond170030/LP4/LP4Driver.java" />
+        <option value="$PROJECT_DIR$/src/ond170030/SP5/BinarySearchTree.java" />
+        <option value="$PROJECT_DIR$/src/ond170030/SP5/AVLTree.java" />
+        <option value="$PROJECT_DIR$/src/ond170030/SP5/RedBlackTree.java" />
+        <option value="$PROJECT_DIR$/src/ond170030/SP5/SplayTree.java" />
+        <option value="$PROJECT_DIR$/src/ond170030/SP11/Enumerate.java" />
         <option value="$PROJECT_DIR$/src/ond170030/SP11/kLargestElements.java" />
-        <option value="$PROJECT_DIR$/src/ond170030/SP12/PXA172130/BFSOO.java" />
-        <option value="$PROJECT_DIR$/src/ond170030/SP12/BFSOO.java" />
-        <option value="$PROJECT_DIR$/src/misc/howMany.java" />
-        <option value="$PROJECT_DIR$/src/misc/sp4Opt.java" />
-        <option value="$PROJECT_DIR$/src/ond170030/SP4/SP4OPT.java" />
-        <option value="$PROJECT_DIR$/src/ond170030/SP8/DFS.java" />
-        <option value="$PROJECT_DIR$/src/ond170030/SP2/SP2Optional.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="width" value="638" />
-    <option name="height" value="800" />
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1098" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="IDSA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IDSA" type="462c0819:PsiDirectoryNode" />
+              <item name="ImplementationAssignments" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ImplementationAssignments" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="IDSA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IDSA" type="462c0819:PsiDirectoryNode" />
+              <item name="ImplementationAssignments" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ImplementationAssignments" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ImplementationAssignments" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ImplementationAssignments" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-<<<<<<< HEAD
-=======
             <path>
-              <item name="IDSA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IDSA" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ond170030" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="IDSA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IDSA" type="462c0819:PsiDirectoryNode" />
+              <item name="ImplementationAssignments" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ImplementationAssignments" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="ond170030" type="462c0819:PsiDirectoryNode" />
-              <item name="LP1" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="IDSA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IDSA" type="462c0819:PsiDirectoryNode" />
+              <item name="ImplementationAssignments" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ImplementationAssignments" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="ond170030" type="462c0819:PsiDirectoryNode" />
-              <item name="LP2" type="462c0819:PsiDirectoryNode" />
+              <item name="JavaExamples" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="IDSA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IDSA" type="462c0819:PsiDirectoryNode" />
+              <item name="ImplementationAssignments" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ImplementationAssignments" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="ond170030" type="462c0819:PsiDirectoryNode" />
-              <item name="SP1" type="462c0819:PsiDirectoryNode" />
+              <item name="LP4" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="IDSA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IDSA" type="462c0819:PsiDirectoryNode" />
+              <item name="ImplementationAssignments" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ImplementationAssignments" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="ond170030" type="462c0819:PsiDirectoryNode" />
-              <item name="SP2" type="462c0819:PsiDirectoryNode" />
+              <item name="LP5" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="IDSA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IDSA" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ond170030" type="462c0819:PsiDirectoryNode" />
-              <item name="SP3" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="IDSA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IDSA" type="462c0819:PsiDirectoryNode" />
+              <item name="ImplementationAssignments" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ImplementationAssignments" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="ond170030" type="462c0819:PsiDirectoryNode" />
               <item name="SP4" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="IDSA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IDSA" type="462c0819:PsiDirectoryNode" />
+              <item name="ImplementationAssignments" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ImplementationAssignments" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="ond170030" type="462c0819:PsiDirectoryNode" />
-              <item name="SP7" type="462c0819:PsiDirectoryNode" />
+              <item name="SP5" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="IDSA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IDSA" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ond170030" type="462c0819:PsiDirectoryNode" />
-              <item name="SP8" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="IDSA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IDSA" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ond170030" type="462c0819:PsiDirectoryNode" />
-              <item name="SP9" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="IDSA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IDSA" type="462c0819:PsiDirectoryNode" />
+              <item name="ImplementationAssignments" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ImplementationAssignments" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="ond170030" type="462c0819:PsiDirectoryNode" />
               <item name="SP10" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="IDSA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IDSA" type="462c0819:PsiDirectoryNode" />
+              <item name="ImplementationAssignments" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ImplementationAssignments" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="ond170030" type="462c0819:PsiDirectoryNode" />
               <item name="SP11" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="IDSA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IDSA" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ond170030" type="462c0819:PsiDirectoryNode" />
-              <item name="SP12" type="462c0819:PsiDirectoryNode" />
-            </path>
->>>>>>> 6fa306e2d28c02e9e2a2b9f16eeead8ff3bcc5a9
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543511481499" />
-    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT" />
-    <property name="last_opened_file_path" value="D:/Git/SP12" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.customizations" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544374138481" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/ond170030/SP10" />
-    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="ond170030.SP11" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Fall18\Implementation\ImplementationAssignments\src\ond170030\SP12" />
-      <recent name="$PROJECT_DIR$/src/ond170030/SP7" />
-      <recent name="$PROJECT_DIR$/src/ond170030/LP1" />
-      <recent name="$PROJECT_DIR$/src/ond170030/LP2" />
-      <recent name="$PROJECT_DIR$/src/ond170030/SP3" />
+      <recent name="ond170030.SP5" />
+      <recent name="ond170030.LP4" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -503,13 +296,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SP4OPT">
-    <configuration name="BFSOO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ond170030.SP12.BFSOO" />
+  <component name="RunManager" selected="Application.kLargestElements">
+    <configuration name="DFS" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ond170030.SP10.DFS" />
       <module name="IDSA-Projects" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ond170030.SP12.*" />
+          <option name="PATTERN" value="ond170030.SP10.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -517,51 +310,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SP2Optional" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ond170030.SP2.SP2Optional" />
+    <configuration name="kLargestElements" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ond170030.SP11.kLargestElements" />
       <module name="IDSA-Projects" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ond170030.SP2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SP4OPT" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ond170030.SP4.SP4OPT" />
-      <module name="IDSA-Projects" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ond170030.SP4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ShuntingYard" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ond170030.LP1.ShuntingYard" />
-      <module name="IDSA-Projects" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ond170030.LP1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="sp4Opt" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ond170030.SP4.sp4Opt" />
-      <module name="IDSA-Projects" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ond170030.SP4.*" />
+          <option name="PATTERN" value="ond170030.SP11.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -570,19 +324,13 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.SP2Optional" />
-      <item itemvalue="Application.BFSOO" />
-      <item itemvalue="Application.sp4Opt" />
-      <item itemvalue="Application.SP4OPT" />
-      <item itemvalue="Application.ShuntingYard" />
+      <item itemvalue="Application.DFS" />
+      <item itemvalue="Application.kLargestElements" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SP4OPT" />
-        <item itemvalue="Application.ShuntingYard" />
-        <item itemvalue="Application.sp4Opt" />
-        <item itemvalue="Application.BFSOO" />
-        <item itemvalue="Application.SP2Optional" />
+        <item itemvalue="Application.kLargestElements" />
+        <item itemvalue="Application.DFS" />
       </list>
     </recent_temporary>
   </component>
@@ -591,467 +339,197 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9b41b743-eaad-46aa-bc87-bcfec84d3b5f" name="Default Changelist" comment="" />
-      <created>1538090622391</created>
+      <changelist id="138e31d8-a7f0-4edc-ad66-be3c89dc1ff1" name="Default Changelist" comment="" />
+      <created>1544243297875</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1538090622391</updated>
+      <updated>1544243297875</updated>
     </task>
     <servers />
   </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
   <component name="ToolWindowManager">
-<<<<<<< HEAD
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16644295" />
-=======
-    <frame x="0" y="0" width="1280" height="800" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16882068" />
->>>>>>> 6fa306e2d28c02e9e2a2b9f16eeead8ff3bcc5a9
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24966443" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="UI Designer" order="3" />
-      <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info id="Image Layers" order="5" />
-      <window_info id="Capture Tool" order="6" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" weight="0.4853147" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" weight="0.32867134" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32876712" />
-      <window_info anchor="bottom" id="Debug" order="2" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="5" weight="0.32911393" />
-      <window_info anchor="bottom" id="Version Control" order="6" show_stripe_button="false" />
-<<<<<<< HEAD
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.4987163" visible="true" weight="0.5062937" />
-=======
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4987163" weight="0.56269115" />
->>>>>>> 6fa306e2d28c02e9e2a2b9f16eeead8ff3bcc5a9
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5012837" side_tool="true" weight="0.3283186" />
-      <window_info anchor="bottom" id="Messages" order="9" weight="0.26153848" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32867134" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Maven Projects" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Palette&#9;" order="4" />
-      <window_info anchor="right" id="Maven Projects" order="5" />
-      <window_info anchor="right" x="31" y="292" width="1280" height="724" id="Run" order="6" sideWeight="0.49919224" weight="0.4418417" />
-      <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Image Layers" order="0" />
+      <window_info id="Designer" order="1" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.24966443" />
+      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.4853147" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="3" weight="0.32867134" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Find" order="5" />
+      <window_info anchor="bottom" id="Run" order="6" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="right" id="Palette" order="0" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Theme Preview" order="2" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Maven Projects" order="4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ond170030/SP7/readme.txt">
+    <entry file="file://$PROJECT_DIR$/src/ond170030/LP5/Graph.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="34">
+          <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/ond170030/DoubleHashing.java" />
-    <entry file="file://$PROJECT_DIR$/src/ond170030/SP7/DoubleHashing.java">
+    <entry file="file://$PROJECT_DIR$/src/ond170030/LP5/BinaryHeap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="223" column="52" selection-end-line="341" selection-end-column="1" />
+        <state relative-caret-position="34">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ond170030/SP7/HashInterface.java">
+    <entry file="file://$PROJECT_DIR$/src/ond170030/LP5/MST.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ond170030/SP7/HashInteger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ond170030/SP8/SP9.java" />
-    <entry file="file://$USER_HOME$/Desktop/vxd180004/SP9.java" />
-    <entry file="file://$PROJECT_DIR$/src/ond170030/LP3/BigDecimalTrial.java" />
-    <entry file="file://$PROJECT_DIR$/src/ond170030/SP10/BFS.java" />
-    <entry file="file://$PROJECT_DIR$/src/output14.txt" />
-    <entry file="file://$PROJECT_DIR$/src/ond170030/SP10/Graph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-910">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ond170030/LP3/lp3-inputs/405.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1075">
-          <caret line="580" column="9" selection-start-line="580" selection-start-column="9" selection-end-line="580" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ond170030/LP3/lp3-inputs/406.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ond170030/LP3/lp3-inputs/407.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1061">
-          <caret line="633" column="6" selection-start-line="633" selection-start-column="6" selection-end-line="633" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ond170030/LP3/sampleInput.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/misc/SinglyLinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ond170030/LP3/486665_543353095703033_1841342475_n.jpg" />
-    <entry file="file://$PROJECT_DIR$/src/ond170030/LP3/lp3-inputs/404.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="896">
-          <caret line="996" column="12" selection-start-line="996" selection-end-line="997" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ond170030/LP3/LP3Driver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/MDS.java" />
-    <entry file="file://$PROJECT_DIR$/src/ond170030/LP3/TLP3Driver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-747">
-          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/MDS.java" />
-    <entry file="file://$PROJECT_DIR$/src/ond170030/SP11/Timer.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ond170030/SP11/Shuffle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ond170030/SP11/report">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ond170030/SP11/question">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ond170030/SP2/Readme.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ond170030/SP2/sp2.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="46" column="4" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/misc/BinaryHeap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ond170030/SP3/SP_3">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="12" column="50" lean-forward="true" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ond170030/SP12/Graph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        <state relative-caret-position="106">
+          <caret line="67" column="33" lean-forward="true" selection-start-line="67" selection-start-column="33" selection-end-line="67" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ond170030/SP8/Graph.java">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="24" lean-forward="true" selection-end-line="545" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ond170030/SP4/SP4.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-69">
-          <caret line="20" column="49" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ond170030/LP3/MDS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2972">
-          <caret line="396" column="24" selection-start-line="396" selection-start-column="24" selection-end-line="396" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ond170030/LP1/ShuntingYard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="53" column="42" lean-forward="true" selection-start-line="53" selection-start-column="42" selection-end-line="53" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ond170030/LP1/postfixEval.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ond170030/SP9/report">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="21" lean-forward="true" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ond170030/SP10/DFS.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+        <state relative-caret-position="140">
+          <caret line="134" column="38" lean-forward="true" selection-start-line="134" selection-start-column="38" selection-end-line="134" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ond170030/JavaExamples/SinglyLinkedList2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="30" column="34" lean-forward="true" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ond170030/SP4/SP4OPT.java">
+    <entry file="file://$PROJECT_DIR$/src/ond170030/LP4/Graph.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ond170030/LP4/Enumerate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="48" column="40" lean-forward="true" selection-start-line="48" selection-start-column="40" selection-end-line="48" selection-end-column="40" />
+        <state relative-caret-position="102">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ond170030/LP4/EnumerateTopological.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ond170030/LP2/SkipList.java">
+    <entry file="file://$PROJECT_DIR$/src/ond170030/LP4/PERT.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="89" column="42" selection-start-line="89" selection-start-column="33" selection-end-line="89" selection-end-column="42" />
+        <state relative-caret-position="119">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ond170030/LP1/Num.java">
+    <entry file="file://$PROJECT_DIR$/src/ond170030/LP4/LP4Driver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3915">
-          <caret line="96" column="22" selection-start-line="96" selection-start-column="22" selection-end-line="96" selection-end-column="22" />
+        <state relative-caret-position="340">
+          <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ond170030/SP12/BFSOO.java">
+    <entry file="file://$PROJECT_DIR$/src/ond170030/SP5/BinarySearchTree.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ond170030/SP5/AVLTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="121" column="13" lean-forward="true" selection-start-line="121" selection-start-column="13" selection-end-line="121" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="34">
+          <caret line="3" column="2" lean-forward="true" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ond170030/SP1/DoublyLinkedList.java">
+    <entry file="file://$PROJECT_DIR$/src/ond170030/SP5/RedBlackTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="153">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ond170030/SP1/SinglyLinkedList.java">
+    <entry file="file://$PROJECT_DIR$/src/ond170030/SP5/SplayTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1111">
-          <caret line="145" column="5" selection-start-line="145" selection-start-column="5" selection-end-line="145" selection-end-column="5" />
-          <folding>
-            <element signature="class#SLLIterator#0;class#SinglyLinkedList#0" />
-          </folding>
+        <state relative-caret-position="119">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ond170030/SP2/BoundedQueue.java">
+    <entry file="file://$PROJECT_DIR$/src/ond170030/SP11/Enumerate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="127" column="18" lean-forward="true" selection-start-line="127" selection-start-column="18" selection-end-line="127" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ond170030/SP2/SP2Optional.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1062">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ond170030/SP3/BinaryHeap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-298">
-          <caret line="97" column="23" lean-forward="true" selection-start-line="97" selection-start-column="23" selection-end-line="97" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ond170030/SP4/BinarySearchTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-813">
-          <caret line="57" column="9" lean-forward="true" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
+        <state relative-caret-position="323">
+          <caret line="21" column="19" lean-forward="true" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ond170030/SP11/kLargestElements.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="87" column="31" lean-forward="true" selection-start-line="87" selection-start-column="31" selection-end-line="87" selection-end-column="31" />
-          <folding>
-            <element signature="e#368#369#0" expanded="true" />
-            <element signature="e#412#413#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="204">
+          <caret line="108" column="26" selection-start-line="108" selection-start-column="23" selection-end-line="108" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ond170030/SP8/DFS.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="238">
-          <caret line="68" column="10" selection-start-line="68" selection-start-column="10" selection-end-line="68" selection-end-column="10" />
-=======
-        <state relative-caret-position="633">
-          <caret line="75" column="8" lean-forward="true" selection-start-line="75" selection-start-column="8" selection-end-line="75" selection-end-column="8" />
->>>>>>> 6fa306e2d28c02e9e2a2b9f16eeead8ff3bcc5a9
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ond170030/SP9/SP9.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="1053">
-          <caret line="157" column="52" lean-forward="true" selection-start-line="157" selection-start-column="52" selection-end-line="157" selection-end-column="52" />
-=======
-        <state relative-caret-position="-681">
-          <caret line="53" column="6" selection-start-line="53" selection-start-column="6" selection-end-line="53" selection-end-column="6" />
->>>>>>> 6fa306e2d28c02e9e2a2b9f16eeead8ff3bcc5a9
-          <folding>
-            <element signature="e#2727#2728#0" expanded="true" />
-            <element signature="e#2778#2779#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>IDSA-Projects</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>

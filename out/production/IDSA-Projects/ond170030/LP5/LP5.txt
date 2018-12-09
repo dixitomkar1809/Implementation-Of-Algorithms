@@ -1,0 +1,23 @@
+CS 5V81.001.  Implementation of data structures and algorithms
+Fall 2018;  Thu, Nov 15
+Long Project LP5: Minimum spanning tree algorithms
+
+Ver 1.0: Initial description (Thu, Nov 15).
+
+Due: 11:59 PM, Sun, Dec 9 (1st deadline), Sun, Dec 16 (2nd deadline).
+
+Max excellence credits: 1.0. 
+
+
+* Submit before the first deadline (Sun, Dec 9) to be eligible for excellence credit. 
+
+* For each group, only its last submission is kept and earlier submissions are discarded. 
+
+* Your code must be of good quality, and pass all test cases within time limits to earn excellence credits.
+
+
+Project Description:
+
+Implement BinaryHeap and its nested class IndexedHeap, and the three versions of
+Prim's algorithm discussed in class, and Kruskal's algorithm.  Starter code is provided.
+Transfer your BinaryHeap code from SP3.  Some minor modifications may be required.

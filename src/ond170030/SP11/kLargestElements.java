@@ -105,7 +105,7 @@ public class kLargestElements {
      * @param args
      */
     public static void main(String[] args) {
-        int n = 64000000;
+        int n = 8000000;
         Timer timer1 = new Timer();
         Timer timer2 = new Timer();
         int[] arr = new int[n];

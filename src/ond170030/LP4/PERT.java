@@ -3,12 +3,12 @@
  */
 
 // change package to your netid
-package rbk;
+package ond170030.LP4;
 
-import rbk.Graph.Vertex;
-import rbk.Graph.Edge;
-import rbk.Graph.GraphAlgorithm;
-import rbk.Graph.Factory;
+import ond170030.LP4.Graph.Vertex;
+import ond170030.LP4.Graph.Edge;
+import ond170030.LP4.Graph.GraphAlgorithm;
+import ond170030.LP4.Graph.Factory;
 
 import java.io.File;
 import java.util.Scanner;

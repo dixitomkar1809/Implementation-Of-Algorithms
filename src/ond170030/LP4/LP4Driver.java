@@ -1,6 +1,6 @@
 
 // Change to your netid
-package test;
+package ond170030.LP4;
 
 import java.util.Scanner;
 
@@ -13,7 +13,7 @@ public class LP4Driver {
 	// input is read, otherwise use input from string.
 	in = args.length > 0 ? new Scanner(new java.io.File(args[0])) : new Scanner(graph);
 	if(args.length > 1) { details = true; }
-	rbk.Graph g = rbk.Graph.readDirectedGraph(in);
+		ond170030.LP4.Graph g = ond170030.LP4.Graph.readDirectedGraph(in);
 	int[] duration = new int[g.size()];
 	for(int i=0; i<g.size(); i++) {
 	    duration[i] = in.nextInt();
@@ -26,7 +26,7 @@ public class LP4Driver {
 	    if(g.size() <= 20 || details) {
 		g.printGraph(false);
 		System.out.println("u\tDur\tEC\tLC\tSlack\tCritical");
-		for(rbk.Graph.Vertex u: g) {
+		for(ond170030.LP4.Graph.Vertex u: g) {
 		    System.out.println(u + "\t" + duration[u.getIndex()] + "\t" + p.ec(u) + "\t" + p.lc(u) + "\t" + p.slack(u) + "\t" + p.critical(u));
 		}
 	    }
