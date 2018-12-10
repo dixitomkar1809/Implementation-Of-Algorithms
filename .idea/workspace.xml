@@ -2,25 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="138e31d8-a7f0-4edc-ad66-be3c89dc1ff1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/misc/ReverseString.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IDSA-Projects/ond170030/LP2/scratch.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IDSA-Projects/ond170030/SP1/assgn.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IDSA-Projects/ond170030/SP3/SP_3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ond170030/Java Examples/BFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ond170030/JavaExamples/BFS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ond170030/Java Examples/BFSOO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ond170030/JavaExamples/BFSOO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ond170030/Java Examples/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ond170030/JavaExamples/Graph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ond170030/Java Examples/SinglyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ond170030/JavaExamples/SinglyLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ond170030/Java Examples/SinglyLinkedList2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ond170030/JavaExamples/SinglyLinkedList2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ond170030/LP4/Enumerate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ond170030/LP4/Enumerate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ond170030/LP4/EnumerateToplogical.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ond170030/LP4/EnumerateTopological.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ond170030/LP4/LP4Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ond170030/LP4/LP4Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ond170030/LP4/PERT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ond170030/LP4/PERT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ond170030/SP11/Enumerate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ond170030/SP11/Enumerate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ond170030/SP11/kLargestElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ond170030/SP11/kLargestElements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ond170030/SP5/AVLTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ond170030/SP5/AVLTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ond170030/SP5/RedBlackTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ond170030/SP5/RedBlackTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ond170030/SP5/SplayTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ond170030/SP5/SplayTree.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,126 +16,55 @@
     <session id="-919916533">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.10" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="16" />
+          <entry key="java" value="17" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="16" />
+          <entry key="JAVA" value="17" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="192" />
+          <entry key="java" value="515" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="192" />
+          <entry key="JAVA" value="515" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ond170030/LP4/EnumerateTopological.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ond170030/LP4/LP4Driver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ond170030/SP5/AVLTree.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="3" column="2" lean-forward="true" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ond170030/SP5/RedBlackTree.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ond170030/SP5/SplayTree.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ond170030/SP11/Enumerate.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="21" column="19" lean-forward="true" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ond170030/SP11/kLargestElements.java">
+        <entry file="file://$PROJECT_DIR$/src/misc/ReverseString.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="108" column="26" selection-start-line="108" selection-start-column="23" selection-end-line="108" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ond170030/SP5/BinarySearchTree.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ond170030/LP4/PERT.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ond170030/LP4/Enumerate.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="136">
+              <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -181,20 +93,23 @@
         <option value="$PROJECT_DIR$/src/ond170030/SP5/SplayTree.java" />
         <option value="$PROJECT_DIR$/src/ond170030/SP11/Enumerate.java" />
         <option value="$PROJECT_DIR$/src/ond170030/SP11/kLargestElements.java" />
+        <option value="$PROJECT_DIR$/src/misc/ReverseString.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1098" />
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1939" />
+    <option name="height" value="1099" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -211,6 +126,12 @@
               <item name="ImplementationAssignments" type="b2602c69:ProjectViewProjectNode" />
               <item name="ImplementationAssignments" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ImplementationAssignments" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ImplementationAssignments" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="misc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ImplementationAssignments" type="b2602c69:ProjectViewProjectNode" />
@@ -271,12 +192,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544374138481" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544414631435" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -296,13 +215,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.kLargestElements">
+  <component name="RunManager" selected="Application.ReverseString">
     <configuration name="DFS" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ond170030.SP10.DFS" />
       <module name="IDSA-Projects" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ond170030.SP10.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReverseString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="misc.ReverseString" />
+      <module name="IDSA-Projects" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="misc.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -326,9 +258,11 @@
     <list>
       <item itemvalue="Application.DFS" />
       <item itemvalue="Application.kLargestElements" />
+      <item itemvalue="Application.ReverseString" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ReverseString" />
         <item itemvalue="Application.kLargestElements" />
         <item itemvalue="Application.DFS" />
       </list>
@@ -351,17 +285,13 @@
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24966443" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25302014" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" weight="0.4853147" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.32867134" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32867134" />
@@ -369,14 +299,18 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.4853147" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32867134" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
     </layout>
     <layout-to-restore>
       <window_info id="Image Layers" order="0" />
@@ -429,9 +363,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="106">
           <caret line="67" column="33" lean-forward="true" selection-start-line="67" selection-start-column="33" selection-end-line="67" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -453,9 +384,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="30" column="34" lean-forward="true" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -473,9 +401,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -528,6 +453,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="108" column="26" selection-start-line="108" selection-start-column="23" selection-end-line="108" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/misc/ReverseString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
         </state>
       </provider>
     </entry>
